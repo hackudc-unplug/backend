@@ -8,6 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 pre-commit = "^3.6.1"
+fastapi = "^0.109.2"
 
 
 [build-system]

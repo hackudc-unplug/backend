@@ -1,16 +1,27 @@
 from fastapi import APIRouter, UploadFile, File
+from services.image_service import ImageService
+from fastapi import status
+
+from schemas.errors import INVALID_REQUEST
 
 router = APIRouter(
     prefix="/bill",
     tags=["bill"],
 )
 
+image_service = ImageService()
 
-@router.post("/upload")
+
+@router.post(
+    "/upload",
+    status_code=status.HTTP_201_CREATED,
+    response_model=str,
+    responses={**INVALID_REQUEST},
+)
 def upload_bill(
     file: UploadFile = File(...),
 ):
-    return {"Upload": "file"}
+    return image_service.save_image(file)
 
 
 @router.get("/{bill_id}/expenses")

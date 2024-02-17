@@ -12,7 +12,7 @@ from services.price_consumption.price_consumption_service import (
 
 class MockPriceConsumptionService(PriceConsumptionService):
     def day_price_consumption(
-        self, bill_id: str, day: int, month: int, year: int
+        self, day: int, month: int, year: int
     ) -> GetPriceConsumptionDayResponse:
         return GetPriceConsumptionDayResponse(
             prices=PriceMother.get_daily_prices(),
@@ -20,7 +20,7 @@ class MockPriceConsumptionService(PriceConsumptionService):
         )
 
     def week_price_consumption(
-        self, bill_id: str, day: int, month: int, year: int
+        self, day: int, month: int, year: int
     ) -> GetPriceConsumptionWeekResponse:
         return GetPriceConsumptionWeekResponse(
             prices=PriceMother.get_weekly_prices(),
@@ -28,7 +28,7 @@ class MockPriceConsumptionService(PriceConsumptionService):
         )
 
     def month_price_consumption(
-        self, bill_id: str, day: int, month: int, year: int
+        self, day: int, month: int, year: int
     ) -> GetPriceConsumptionMonthResponse:
         return GetPriceConsumptionMonthResponse(
             prices=PriceMother.get_monthly_prices(),

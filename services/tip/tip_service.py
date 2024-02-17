@@ -5,5 +5,7 @@ from schemas.bill import GetTipResponse
 
 class TipService(ABC):
     @abstractmethod
-    def tip(self, bill_id: str) -> GetTipResponse:
+    def tip(
+        self, consumptions: list[float], prices: list[float]
+    ) -> GetTipResponse:
         pass

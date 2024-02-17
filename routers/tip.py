@@ -1,23 +1,23 @@
 from fastapi import APIRouter, status
 
 from schemas.bill import GetTipResponse
-from schemas.errors import NOT_FOUND
+from services.tip.tip_imp import TipImpService
 
 router = APIRouter(
     prefix="/tip",
     tags=["tip"],
 )
 
+tip_service = TipImpService()
+
 
 @router.get(
-    "/{bill_id}/tip",
+    "",
     status_code=status.HTTP_200_OK,
     response_model=GetTipResponse,
-    responses={**NOT_FOUND},
 )
 def get_tip(
-    bill_id: str,
+    consumptions: list[float],
+    prices: list[float],
 ):
-    # if not bill_service.bill_exists(bill_id):
-    #     raise HTTPException(status_code=404, detail="Bill not found")
-    return bill_service.tip(bill_id)
+    return tip_service.tip(consumptions, prices)

@@ -20,9 +20,5 @@ class GetSourcesResponse(BaseModel):
     otherNonRenewable: float
 
 
-class Tip(BaseModel):
-    tip: str
-
-
 class GetTipResponse(BaseModel):
-    tips: list[Tip]
+    tip: str

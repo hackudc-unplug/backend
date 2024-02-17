@@ -11,7 +11,6 @@ class PriceConsumptionService(ABC):
     @abstractmethod
     def day_price_consumption(
         self,
-        bill_id: str,
         day: int,
         month: int,
         year: int,
@@ -21,7 +20,6 @@ class PriceConsumptionService(ABC):
     @abstractmethod
     def week_price_consumption(
         self,
-        bill_id: str,
         day: int,
         month: int,
         year: int,
@@ -31,7 +29,6 @@ class PriceConsumptionService(ABC):
     @abstractmethod
     def month_price_consumption(
         self,
-        bill_id: str,
         day: int,
         month: int,
         year: int,

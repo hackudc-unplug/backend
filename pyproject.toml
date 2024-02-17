@@ -16,6 +16,7 @@ pandas = "^2.2.0"
 requests = "^2.31.0"
 python-doctr = {extras = ["torch"], version = "^0.7.0"}
 opencv-contrib-python = "^4.9.0.80"
+transformers = "^4.37.2"
 
 
 [build-system]

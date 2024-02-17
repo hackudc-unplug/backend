@@ -32,7 +32,7 @@ class PriceConsumptionImpService(PriceConsumptionService):
         return df
 
     def day_price_consumption(
-        self, bill_id: str, day: int, month: int, year: int
+        self, day: int, month: int, year: int
     ) -> GetPriceConsumptionDayResponse:
         date = datetime.datetime(year, month, day)
 
@@ -43,7 +43,7 @@ class PriceConsumptionImpService(PriceConsumptionService):
         )
 
     def week_price_consumption(
-        self, bill_id: str, day: int, month: int, year: int
+        self, day: int, month: int, year: int
     ) -> GetPriceConsumptionWeekResponse:
         consumptions: list[float] = []
         prices: list[float] = []
@@ -61,7 +61,7 @@ class PriceConsumptionImpService(PriceConsumptionService):
         )
 
     def month_price_consumption(
-        self, bill_id: str, day: int, month: int, year: int
+        self, day: int, month: int, year: int
     ) -> GetPriceConsumptionMonthResponse:
         consumptions: list[float] = []
         prices: list[float] = []

@@ -9,7 +9,12 @@ from schemas.errors import NOT_FOUND, INVALID_MEDIA_TYPE
 from services.bill.bil_imp import BillImpService
 from services.image_service import ImageService
 
-VALID_MEDIA_TYPES = ["image/jpeg", "image/png", "image/jpg"]
+VALID_MEDIA_TYPES = [
+    "image/jpeg",
+    "image/png",
+    "image/jpg",
+    "application/octet-stream",
+]
 
 router = APIRouter(
     prefix="/bill",

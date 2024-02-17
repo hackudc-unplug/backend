@@ -30,7 +30,7 @@ class Consumption(BaseModel):
 
 class PriceConsumptionResponse(BaseModel):
     prices: list[Price]
-    consumptions: list[Price]
+    consumptions: list[Consumption]
 
 
 class GetPriceConsumptionDayResponse(PriceConsumptionResponse):

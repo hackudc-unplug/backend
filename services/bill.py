@@ -21,19 +21,31 @@ class BillService(ABC):
 
     @abstractmethod
     def day_price_consumption(
-        self, bill_id: str, day: str
+        self,
+        bill_id: str,
+        day: str,
+        month: str,
+        year: str,
     ) -> GetPriceConsumptionDayResponse:
         pass
 
     @abstractmethod
     def week_price_consumption(
-        self, bill_id: str, week: str
+        self,
+        bill_id: str,
+        day: str,
+        month: str,
+        year: str,
     ) -> GetPriceConsumptionWeekResponse:
         pass
 
     @abstractmethod
     def month_price_consumption(
-        self, bill_id: str, month: str
+        self,
+        bill_id: str,
+        day: str,
+        month: str,
+        year: str,
     ) -> GetPriceConsumptionMonthResponse:
         pass
 

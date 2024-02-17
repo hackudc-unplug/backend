@@ -68,8 +68,10 @@ def get_sources(
 def get_price_consumption_day(
     bill_id: str,
     day: str,
+    month: str,
+    year: str,
 ):
-    return bill_service.day_price_consumption(bill_id, day)
+    return bill_service.day_price_consumption(bill_id, day, month, year)
 
 
 @router.get(
@@ -80,9 +82,11 @@ def get_price_consumption_day(
 )
 def get_price_consumption_day(
     bill_id: str,
-    week: str,
+    day: str,
+    month: str,
+    year: str,
 ):
-    return bill_service.week_price_consumption(bill_id, week)
+    return bill_service.week_price_consumption(bill_id, day, month, year)
 
 
 @router.get(
@@ -93,9 +97,11 @@ def get_price_consumption_day(
 )
 def get_price_consumption_day(
     bill_id: str,
+    day: str,
     month: str,
+    year: str,
 ):
-    return bill_service.month_price_consumption(bill_id, month)
+    return bill_service.month_price_consumption(bill_id, day, month, year)
 
 
 @router.get(

@@ -1,3 +1,4 @@
+import os.path
 from abc import ABC, abstractmethod
 
 from schemas.bill import (
@@ -8,6 +9,8 @@ from schemas.bill import (
     GetPriceConsumptionMonthResponse,
     GetTipResponse,
 )
+
+BILL_DIR = 'static/bill/'
 
 
 class BillService(ABC):
@@ -23,9 +26,9 @@ class BillService(ABC):
     def day_price_consumption(
         self,
         bill_id: str,
-        day: str,
-        month: str,
-        year: str,
+        day: int,
+        month: int,
+        year: int,
     ) -> GetPriceConsumptionDayResponse:
         pass
 
@@ -33,9 +36,9 @@ class BillService(ABC):
     def week_price_consumption(
         self,
         bill_id: str,
-        day: str,
-        month: str,
-        year: str,
+        day: int,
+        month: int,
+        year: int,
     ) -> GetPriceConsumptionWeekResponse:
         pass
 
@@ -43,12 +46,16 @@ class BillService(ABC):
     def month_price_consumption(
         self,
         bill_id: str,
-        day: str,
-        month: str,
-        year: str,
+        day: int,
+        month: int,
+        year: int,
     ) -> GetPriceConsumptionMonthResponse:
         pass
 
     @abstractmethod
     def tip(self, bill_id: str) -> GetTipResponse:
         pass
+
+    @staticmethod
+    def bill_exists(bill_id: str) -> bool:
+        return os.path.exists(f"{BILL_DIR}{bill_id}")

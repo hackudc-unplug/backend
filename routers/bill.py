@@ -1,4 +1,4 @@
-from fastapi import APIRouter, UploadFile, File
+from fastapi import APIRouter, UploadFile, File, HTTPException
 
 from schemas.bill import (
     GetExpensesResponse,
@@ -8,6 +8,7 @@ from schemas.bill import (
     GetPriceConsumptionWeekResponse,
     GetTipResponse,
 )
+from services.date import DateService
 from services.image_service import ImageService
 from fastapi import status
 
@@ -21,6 +22,7 @@ router = APIRouter(
 
 image_service = ImageService()
 bill_service = MockBillService()
+date_service = DateService()
 
 
 @router.post(
@@ -33,6 +35,23 @@ def upload_bill(
     file: UploadFile = File(...),
 ):
     return image_service.save_image(file)
+
+
+@router.get(
+    "/submit",
+    status_code=status.HTTP_200_OK,
+    response_model=str,
+    responses={**NOT_FOUND},
+)
+def submit_image(
+    image_id_1: str,
+    image_id_2: str,
+    image_id_3: str,
+):
+    image_ids = [image_id_1, image_id_2, image_id_3]
+    # if not image_service.images_exists(image_ids):
+    #     raise HTTPException(status_code=404, detail="Image not found")
+    return image_service.assemble_image(image_ids)
 
 
 @router.get(
@@ -56,6 +75,8 @@ def get_expenses(
 def get_sources(
     bill_id: str,
 ):
+    # if not bill_service.bill_exists(bill_id):
+    #     raise HTTPException(status_code=404, detail="Bill not found")
     return bill_service.sources(bill_id)
 
 
@@ -67,10 +88,14 @@ def get_sources(
 )
 def get_price_consumption_day(
     bill_id: str,
-    day: str,
-    month: str,
-    year: str,
+    day: int,
+    month: int,
+    year: int,
 ):
+    # if not bill_service.bill_exists(bill_id):
+    #     raise HTTPException(status_code=404, detail="Bill not found")
+    # if not date_service.valid_date(day, month, year):
+    #     raise HTTPException(status_code=400, detail="Invalid date")
     return bill_service.day_price_consumption(bill_id, day, month, year)
 
 
@@ -82,10 +107,14 @@ def get_price_consumption_day(
 )
 def get_price_consumption_day(
     bill_id: str,
-    day: str,
-    month: str,
-    year: str,
+    day: int,
+    month: int,
+    year: int,
 ):
+    # if not bill_service.bill_exists(bill_id):
+    #     raise HTTPException(status_code=404, detail="Bill not found")
+    # if not date_service.valid_date(day, month, year):
+    #     raise HTTPException(status_code=400, detail="Invalid date")
     return bill_service.week_price_consumption(bill_id, day, month, year)
 
 
@@ -97,10 +126,14 @@ def get_price_consumption_day(
 )
 def get_price_consumption_day(
     bill_id: str,
-    day: str,
-    month: str,
-    year: str,
+    day: int,
+    month: int,
+    year: int,
 ):
+    # if not bill_service.bill_exists(bill_id):
+    #     raise HTTPException(status_code=404, detail="Bill not found")
+    # if not date_service.valid_date(day, month, year):
+    #     raise HTTPException(status_code=400, detail="Invalid date")
     return bill_service.month_price_consumption(bill_id, day, month, year)
 
 
@@ -113,4 +146,6 @@ def get_price_consumption_day(
 def get_tip(
     bill_id: str,
 ):
+    # if not bill_service.bill_exists(bill_id):
+    #     raise HTTPException(status_code=404, detail="Bill not found")
     return bill_service.tip(bill_id)

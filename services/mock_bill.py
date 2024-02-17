@@ -35,7 +35,7 @@ class MockBillService(BillService):
         )
 
     def day_price_consumption(
-        self, bill_id: str, day: str, month: str, year: str
+        self, bill_id: str, day: int, month: int, year: int
     ) -> GetPriceConsumptionDayResponse:
         return GetPriceConsumptionDayResponse(
             prices=PriceMother.get_daily_prices(),
@@ -43,7 +43,7 @@ class MockBillService(BillService):
         )
 
     def week_price_consumption(
-        self, bill_id: str, day: str, month: str, year: str
+        self, bill_id: str, day: int, month: int, year: int
     ) -> GetPriceConsumptionWeekResponse:
         return GetPriceConsumptionWeekResponse(
             prices=PriceMother.get_weekly_prices(),
@@ -51,7 +51,7 @@ class MockBillService(BillService):
         )
 
     def month_price_consumption(
-        self, bill_id: str, day: str, month: str, year: str
+        self, bill_id: str, day: int, month: int, year: int
     ) -> GetPriceConsumptionMonthResponse:
         return GetPriceConsumptionMonthResponse(
             prices=PriceMother.get_monthly_prices(),

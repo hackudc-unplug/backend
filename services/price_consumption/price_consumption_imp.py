@@ -7,7 +7,9 @@ from schemas.price_consumption import (
     GetPriceConsumptionWeekResponse,
     GetPriceConsumptionDayResponse,
 )
-from services.price_consumption.price_consumption import PriceConsumptionService
+from services.price_consumption.price_consumption_service import (
+    PriceConsumptionService,
+)
 
 
 class PriceConsumptionImpService(PriceConsumptionService):

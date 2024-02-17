@@ -5,7 +5,9 @@ from schemas.price_consumption import (
     GetPriceConsumptionWeekResponse,
     GetPriceConsumptionMonthResponse,
 )
-from services.price_consumption.price_consumption import PriceConsumptionService
+from services.price_consumption.price_consumption_service import (
+    PriceConsumptionService,
+)
 
 
 class MockPriceConsumptionService(PriceConsumptionService):

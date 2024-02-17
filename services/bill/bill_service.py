@@ -4,7 +4,6 @@ from abc import ABC, abstractmethod
 from schemas.bill import (
     GetExpensesResponse,
     GetSourcesResponse,
-    GetTipResponse,
 )
 
 BILL_DIR = 'static/bill/'
@@ -17,10 +16,6 @@ class BillService(ABC):
 
     @abstractmethod
     def sources(self, bill_id: str) -> GetSourcesResponse:
-        pass
-
-    @abstractmethod
-    def tip(self, bill_id: str) -> GetTipResponse:
         pass
 
     @staticmethod

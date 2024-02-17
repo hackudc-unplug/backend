@@ -5,7 +5,7 @@ from PIL import Image
 
 from fastapi import UploadFile
 
-from services.bill.bill import BILL_DIR
+from services.bill.bill_service import BILL_DIR
 
 IMAGE_UPLOAD_DIR = 'static/upload/'
 

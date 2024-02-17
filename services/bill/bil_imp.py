@@ -1,11 +1,12 @@
+import os
+
 from docparser import (
     EnergyConsumptionAnalyzer,
     EnergySourceAnalyzer,
     OCRAnalyzer,
 )
-from schemas.bill import GetTipResponse, GetSourcesResponse, GetExpensesResponse
-from services.bill.bill import BillService, BILL_DIR
-import os
+from schemas.bill import GetSourcesResponse, GetExpensesResponse
+from services.bill.bill_service import BillService, BILL_DIR
 
 EXTRACT_DIR = "static/parser/"
 
@@ -69,6 +70,3 @@ class BillImpService(BillService):
         no_extension = bill_id.split(".")[0]
         self.output_file = f"{EXTRACT_DIR}/{no_extension}.txt"
         self.ocr_model.parse_data_as_json(bill_path, self.output_file)
-
-    def tip(self, bill_id: str) -> GetTipResponse:
-        pass

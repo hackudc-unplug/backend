@@ -20,17 +20,9 @@ class GetSourcesResponse(BaseModel):
     otherNonRenewable: float
 
 
-class Price(BaseModel):
-    price: float
-
-
-class Consumption(BaseModel):
-    consumption: float
-
-
 class PriceConsumptionResponse(BaseModel):
-    prices: list[Price]
-    consumptions: list[Consumption]
+    prices: list[float]
+    consumptions: list[float]
 
 
 class GetPriceConsumptionDayResponse(PriceConsumptionResponse):

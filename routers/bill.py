@@ -12,6 +12,7 @@ from services.image_service import ImageService
 from fastapi import status
 
 from schemas.errors import INVALID_REQUEST, NOT_FOUND, INVALID_MEDIA_TYPE
+from services.mock_bill import MockBillService
 
 router = APIRouter(
     prefix="/bill",
@@ -19,6 +20,7 @@ router = APIRouter(
 )
 
 image_service = ImageService()
+bill_service = MockBillService()
 
 
 @router.post(
@@ -42,7 +44,7 @@ def upload_bill(
 def get_expenses(
     bill_id: str,
 ):
-    return {"Get": "expenses"}
+    return bill_service.expenses(bill_id)
 
 
 @router.get(
@@ -54,7 +56,7 @@ def get_expenses(
 def get_sources(
     bill_id: str,
 ):
-    return {"Get": "sources"}
+    return bill_service.sources(bill_id)
 
 
 @router.get(
@@ -67,7 +69,7 @@ def get_price_consumption_day(
     bill_id: str,
     day: str,
 ):
-    return {"Get": "price-consumption/day"}
+    return bill_service.day_price_consumption(bill_id, day)
 
 
 @router.get(
@@ -80,7 +82,7 @@ def get_price_consumption_day(
     bill_id: str,
     week: str,
 ):
-    return {"Get": "price-consumption/week"}
+    return bill_service.week_price_consumption(bill_id, week)
 
 
 @router.get(
@@ -93,7 +95,7 @@ def get_price_consumption_day(
     bill_id: str,
     month: str,
 ):
-    return {"Get": "price-consumption/month"}
+    return bill_service.month_price_consumption(bill_id, month)
 
 
 @router.get(
@@ -105,4 +107,4 @@ def get_price_consumption_day(
 def get_tip(
     bill_id: str,
 ):
-    return {"Get": "tip"}
+    return bill_service.tip(bill_id)

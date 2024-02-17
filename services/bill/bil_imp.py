@@ -47,7 +47,7 @@ class BillImpService(BillService):
     @staticmethod
     def _should_extract(bill_id: str) -> bool:
         no_extension = bill_id.split(".")[0]
-        return os.path.exists(f"{EXTRACT_DIR}/{no_extension}.txt")
+        return not os.path.exists(f"{EXTRACT_DIR}/{no_extension}.txt")
 
     def _extract_text(self, bill_id: str):
         bill_path = f"{BILL_DIR}/{bill_id}"

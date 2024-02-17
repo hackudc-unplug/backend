@@ -1,0 +1,2391 @@
+Document(
+  (pages): [
+    Page(
+      dimensions=(2304, 1631)
+      (blocks): [
+        Block(
+          (lines): [
+            Line(
+              (words): [
+                Word(value='DATOS', confidence=1.0),
+                Word(value='DE', confidence=0.99),
+                Word(value='LA', confidence=1.0),
+                Word(value='FACTURA', confidence=0.99),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='No', confidence=0.99),
+                Word(value='factura:', confidence=1.0),
+                Word(value='P23CON024210371', confidence=0.6),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Referencia:', confidence=1.0),
+                Word(value='506245911529', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Fecha', confidence=1.0),
+                Word(value='emision', confidence=0.78),
+                Word(value='factura:', confidence=1.0),
+                Word(value='17/10/2023', confidence=0.84),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Fecha', confidence=1.0),
+                Word(value='de', confidence=1.0),
+                Word(value='cargo:', confidence=0.98),
+                Word(value='24', confidence=1.0),
+                Word(value='de', confidence=1.0),
+                Word(value='octubre', confidence=1.0),
+                Word(value='de', confidence=0.93),
+                Word(value='2023', confidence=1.0),
+              ]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [Word(value='enclesc', confidence=0.54)]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [
+              Word(value='Periodo', confidence=1.0),
+              Word(value='de', confidence=1.0),
+              Word(value='facturacion:', confidence=0.99),
+              Word(value='del', confidence=1.0),
+              Word(value='08/08/2023', confidence=0.9),
+              Word(value='a', confidence=1.0),
+              Word(value='09/10/2023', confidence=0.82),
+              Word(value='(62', confidence=1.0),
+              Word(value='dias)', confidence=1.0),
+            ]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [Word(value='luz', confidence=0.98)]
+            ),
+            Line(
+              (words): [
+                Word(value='EndesaE', confidence=0.86),
+                Word(value='Energia,', confidence=0.8),
+                Word(value='SA.', confidence=0.62),
+                Word(value='Unipersonal.', confidence=0.52),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='CIFA', confidence=0.94),
+                Word(value='A81948077.', confidence=0.99),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='C/Ribera', confidence=0.7),
+                Word(value='del', confidence=0.72),
+                Word(value='Loira,', confidence=0.94),
+                Word(value='n*60:28042-', confidence=0.37),
+                Word(value='-Madrid.', confidence=0.78),
+              ]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [
+                Word(value='BENJAMIN', confidence=0.96),
+                Word(value='ARAN', confidence=0.89),
+                Word(value='VIDAL', confidence=0.61),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='BASSA', confidence=1.0),
+                Word(value='15LOC', confidence=0.93),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='25177', confidence=0.82),
+                Word(value='BELLAGUARDA', confidence=0.97),
+              ]
+            ),
+            Line(
+              (words): [Word(value='LERIDA', confidence=0.8)]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [
+              Word(value='RESUMEN', confidence=0.98),
+              Word(value='DE', confidence=1.0),
+              Word(value='LA', confidence=1.0),
+              Word(value='FACTURA', confidence=0.94),
+              Word(value='Y', confidence=0.65),
+              Word(value='DATOS', confidence=1.0),
+              Word(value='DE', confidence=1.0),
+              Word(value='PAGO', confidence=1.0),
+            ]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [Word(value='Potencia', confidence=1.0)]
+            ),
+            Line(
+              (words): [Word(value='Energia', confidence=1.0)]
+            ),
+            Line(
+              (words): [Word(value='Otros', confidence=1.0)]
+            ),
+            Line(
+              (words): [Word(value='Impuestos', confidence=1.0)]
+            ),
+            Line(
+              (words): [Word(value='Total', confidence=0.99)]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [Word(value='17,72€', confidence=0.99)]
+            ),
+            Line(
+              (words): [Word(value='92,61€', confidence=0.99)]
+            ),
+            Line(
+              (words): [Word(value='4,03€', confidence=1.0)]
+            ),
+            Line(
+              (words): [Word(value='6,45€', confidence=0.99)]
+            ),
+            Line(
+              (words): [Word(value='120,81€', confidence=0.99)]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [
+                Word(value='Forma', confidence=0.55),
+                Word(value='de', confidence=1.0),
+                Word(value='pago:', confidence=1.0),
+                Word(value='Domiciliacion', confidence=0.52),
+                Word(value='bancaria', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='IBAN:', confidence=0.76),
+                Word(value='5182719023522001', confidence=0.16),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Cod.Mandato:', confidence=0.77),
+                Word(value='999349670291', confidence=0.98),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Version:', confidence=0.87),
+                Word(value='0000', confidence=1.0),
+              ]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [
+              Word(value='(Detalle', confidence=1.0),
+              Word(value='del', confidence=1.0),
+              Word(value='la', confidence=0.94),
+              Word(value='factura', confidence=1.0),
+              Word(value='en', confidence=0.99),
+              Word(value='el', confidence=1.0),
+              Word(value='reverso)', confidence=0.85),
+            ]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [
+              Word(value='Su', confidence=0.69),
+              Word(value='pago', confidence=1.0),
+              Word(value='sej', confidence=0.96),
+              Word(value='justifica', confidence=0.94),
+              Word(value='con', confidence=0.76),
+              Word(value='el', confidence=0.99),
+              Word(value='correspondiente', confidence=0.66),
+              Word(value='apunte', confidence=1.0),
+              Word(value='bancario', confidence=1.0),
+            ]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [
+                Word(value='INFORMACION', confidence=0.73),
+                Word(value='DEL', confidence=1.0),
+                Word(value='CONSUMO', confidence=1.0),
+                Word(value='ELECTRICO', confidence=0.83),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='De', confidence=1.0),
+                Word(value='08/08/2023', confidence=0.98),
+                Word(value='a', confidence=1.0),
+                Word(value='09/10/2023', confidence=0.88),
+                Word(value='(62', confidence=0.99),
+                Word(value='dias)', confidence=0.96),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Consumo', confidence=0.96),
+                Word(value='punta', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Consumo', confidence=0.99),
+                Word(value='llano', confidence=0.94),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Consumo', confidence=0.9),
+                Word(value='valle', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Consumo', confidence=0.83),
+                Word(value='Total', confidence=0.96),
+              ]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [Word(value='kWh', confidence=0.98)]
+            ),
+            Line(
+              (words): [Word(value='910', confidence=0.69)]
+            ),
+            Line(
+              (words): [Word(value='780', confidence=0.63)]
+            ),
+            Line(
+              (words): [Word(value='650', confidence=1.0)]
+            ),
+            Line(
+              (words): [Word(value='130', confidence=1.0)]
+            ),
+            Line(
+              (words): [
+                Word(value='=Cons.Llanol', confidence=0.46),
+                Word(value='Real', confidence=0.99),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='.', confidence=0.4),
+                Word(value='Media', confidence=0.98),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Coste', confidence=1.0),
+                Word(value='en', confidence=0.94),
+                Word(value='estat', confidence=0.45),
+                Word(value='factura', confidence=0.71),
+                Word(value='1,95', confidence=0.73),
+                Word(value='Eidia', confidence=0.42),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Coste', confidence=1.0),
+                Word(value='ditimos', confidence=0.67),
+                Word(value='14r', confidence=0.8),
+                Word(value='meses', confidence=0.91),
+                Word(value='1,946', confidence=0.55),
+                Word(value='€ldia', confidence=0.51),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Consumo', confidence=0.99),
+                Word(value='Gltimo', confidence=0.59),
+                Word(value='alo', confidence=0.29),
+                Word(value='8.183KWh', confidence=0.55),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='4,060', confidence=0.75),
+                Word(value='KW', confidence=0.96),
+                Word(value='enF', confidence=0.92),
+                Word(value='P3', confidence=1.0),
+                Word(value='(valle).', confidence=0.5),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Estai', confidence=0.96),
+                Word(value='informacion', confidence=0.96),
+                Word(value='estàc', confidence=0.49),
+                Word(value='disponible', confidence=0.93),
+                Word(value='desde', confidence=1.0),
+                Word(value='01/11/2022', confidence=0.85),
+              ]
+            ),
+            Line(
+              (words): [Word(value='Elo', confidence=0.64)]
+            ),
+            Line(
+              (words): [
+                Word(value='facturaciône', confidence=0.79),
+                Word(value='es', confidence=1.0),
+                Word(value='de', confidence=1.0),
+                Word(value='207,530', confidence=0.61),
+                Word(value='KWh.', confidence=0.77),
+              ]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [
+              Word(value='Evoluciôn', confidence=0.61),
+              Word(value='del', confidence=1.0),
+              Word(value='consumo', confidence=0.97),
+            ]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [
+                Word(value='184,110', confidence=1.0),
+                Word(value='kWh', confidence=0.99),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='194,270', confidence=0.99),
+                Word(value='KWh', confidence=0.62),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='326,450', confidence=0.99),
+                Word(value='kWh', confidence=0.93),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='704,830', confidence=1.0),
+                Word(value='KWh', confidence=0.64),
+              ]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [
+                Word(value='FEB', confidence=1.0),
+                Word(value='ABRJUNAGOOCT', confidence=0.51),
+              ]
+            ),
+            Line(
+              (words): [Word(value='Cons.PuntaReal', confidence=0.92)]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [
+              Word(value='En', confidence=0.99),
+              Word(value='esta', confidence=1.0),
+              Word(value='factura', confidence=1.0),
+              Word(value='el', confidence=1.0),
+              Word(value='consumo', confidence=0.62),
+            ]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [
+                Word(value='AGoOCT', confidence=0.43),
+                Word(value='21', confidence=1.0),
+                Word(value='21C', confidence=0.26),
+                Word(value='AR-VMACOOETE', confidence=0.24),
+                Word(value='22', confidence=1.0),
+                Word(value='22', confidence=1.0),
+                Word(value='22', confidence=1.0),
+                Word(value='CTC', confidence=0.23),
+                Word(value='23_2323', confidence=0.49),
+                Word(value='23', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Las', confidence=1.0),
+                Word(value='potenciasr', confidence=0.52),
+                Word(value='maximas', confidence=0.45),
+                Word(value='demandadas', confidence=0.99),
+                Word(value='enel', confidence=0.5),
+                Word(value='Gltimo', confidence=0.42),
+                Word(value='afohans', confidence=0.46),
+                Word(value='sido', confidence=0.66),
+                Word(value='3,970kWen', confidence=0.61),
+                Word(value='P1', confidence=0.99),
+                Word(value='(punta)y', confidence=0.61),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='medio', confidence=0.98),
+                Word(value='mensual', confidence=0.93),
+                Word(value='de', confidence=0.98),
+                Word(value='los', confidence=0.99),
+                Word(value='consumidores', confidence=0.99),
+                Word(value='que', confidence=0.83),
+                Word(value='estân', confidence=0.41),
+                Word(value='en', confidence=0.99),
+                Word(value='sur', confidence=1.0),
+                Word(value='mismo', confidence=0.99),
+                Word(value='codigo', confidence=0.94),
+                Word(value='postal', confidence=0.93),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='ytieneny', confidence=0.53),
+                Word(value='potencias', confidence=0.95),
+                Word(value='contratadasi', confidence=0.67),
+                Word(value='inferiores', confidence=0.99),
+                Word(value='igualesa', confidence=0.51),
+                Word(value='15KW,', confidence=0.74),
+                Word(value='para', confidence=0.99),
+                Word(value='su', confidence=0.8),
+                Word(value='periodo', confidence=0.96),
+                Word(value='de', confidence=1.0),
+              ]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [Word(value='Cons.ValleReal', confidence=0.43)]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [
+              Word(value='ha', confidence=1.0),
+              Word(value='salido', confidence=1.0),
+              Word(value='a0.131393', confidence=0.91),
+              Word(value='€/kWh', confidence=0.89),
+            ]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [
+              Word(value='TUCONSUMO', confidence=0.94),
+              Word(value='DICE', confidence=1.0),
+              Word(value='MUCHO', confidence=0.99),
+              Word(value='DE', confidence=1.0),
+              Word(value='TI', confidence=0.99),
+            ]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [
+              Word(value='BENJAMIN,', confidence=0.99),
+              Word(value='zsabes', confidence=0.37),
+              Word(value='que', confidence=0.89),
+              Word(value='este', confidence=1.0),
+              Word(value='ano', confidence=0.99),
+              Word(value='llevas', confidence=0.74),
+            ]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [
+              Word(value='consumido', confidence=0.99),
+              Word(value='1606', confidence=1.0),
+              Word(value='kWh?', confidence=1.0),
+            ]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [
+                Word(value='Entra', confidence=0.97),
+                Word(value='eni', confidence=1.0),
+                Word(value='infoEnergia,', confidence=0.92),
+                Word(value='tul', confidence=0.86),
+                Word(value='herramienta', confidence=1.0),
+                Word(value='de', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='asesoramiento', confidence=0.68),
+                Word(value='energético', confidence=0.91),
+                Word(value='gratuita,y', confidence=0.97),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='ahorra', confidence=0.74),
+                Word(value='en', confidence=0.99),
+                Word(value='tu', confidence=0.56),
+                Word(value='factura.', confidence=0.81),
+              ]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [
+              Word(value='Informate', confidence=0.97),
+              Word(value='en', confidence=1.0),
+              Word(value='andesacom/mfonergn', confidence=0.38),
+            ]
+          )]
+          (artefacts): []
+        ),
+      ]
+    ),
+    Page(
+      dimensions=(2304, 1631)
+      (blocks): [
+        Block(
+          (lines): [
+            Line(
+              (words): [
+                Word(value='DATOS', confidence=1.0),
+                Word(value='DEL', confidence=1.0),
+                Word(value='CONTRATO', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Titular', confidence=0.98),
+                Word(value='del', confidence=1.0),
+                Word(value='contrato:', confidence=1.0),
+                Word(value='BENJAMIN', confidence=0.99),
+                Word(value='ARAN', confidence=0.88),
+                Word(value='VIDAL', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='NIF:', confidence=0.79),
+                Word(value='40882592T', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Direccion', confidence=0.98),
+                Word(value='de', confidence=1.0),
+                Word(value='suministro:', confidence=1.0),
+                Word(value='BASSA', confidence=0.99),
+                Word(value='15LOC,', confidence=1.0),
+                Word(value='25177', confidence=0.71),
+                Word(value='BELLAGUARDA,', confidence=0.78),
+              ]
+            ),
+            Line(
+              (words): [Word(value='LERIDA', confidence=0.63)]
+            ),
+            Line(
+              (words): [
+                Word(value='Contrato', confidence=1.0),
+                Word(value='de', confidence=0.84),
+                Word(value='mercado', confidence=0.98),
+                Word(value='libre:', confidence=1.0),
+                Word(value='Tarifa', confidence=1.0),
+                Word(value='ONE', confidence=1.0),
+                Word(value='Nocturna', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Referencia', confidence=1.0),
+                Word(value='de', confidence=1.0),
+                Word(value='contrato', confidence=1.0),
+                Word(value='de', confidence=0.77),
+                Word(value='suministro:', confidence=0.8),
+                Word(value='999349670291', confidence=0.96),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Potencias', confidence=1.0),
+                Word(value='contratadas:', confidence=0.95),
+                Word(value='punta', confidence=0.97),
+                Word(value='3,300', confidence=1.0),
+                Word(value='kW;', confidence=0.98),
+                Word(value='valle', confidence=0.97),
+                Word(value='3,300', confidence=0.8),
+                Word(value='kW', confidence=0.65),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Fin', confidence=1.0),
+                Word(value='de', confidence=0.84),
+                Word(value='contrato', confidence=1.0),
+                Word(value='de', confidence=0.89),
+                Word(value='suministro:', confidence=1.0),
+                Word(value='13/07/2023', confidence=0.95),
+                Word(value='(renovacion', confidence=0.5),
+                Word(value='anual', confidence=0.99),
+              ]
+            ),
+            Line(
+              (words): [Word(value='automâtica)', confidence=0.76)]
+            ),
+            Line(
+              (words): [
+                Word(value='Permanencia:', confidence=0.99),
+                Word(value='No', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='DETALLE', confidence=1.0),
+                Word(value='DE', confidence=0.57),
+                Word(value='LA', confidence=1.0),
+                Word(value='FACTURA', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [Word(value='Potencia', confidence=0.93)]
+            ),
+            Line(
+              (words): [
+                Word(value='Pot.', confidence=0.98),
+                Word(value='Punta', confidence=0.95),
+                Word(value='3,300', confidence=1.0),
+                Word(value='KWx0,078254', confidence=0.8),
+                Word(value='Eur/kWx62', confidence=0.81),
+                Word(value='dias.', confidence=0.99),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Pot.', confidence=0.95),
+                Word(value='Valle', confidence=0.94),
+                Word(value='3,300', confidence=1.0),
+                Word(value='KWx0,008367', confidence=0.97),
+                Word(value='Eur/kWx62', confidence=0.64),
+                Word(value='dias.', confidence=0.95),
+              ]
+            ),
+            Line(
+              (words): [Word(value='Energia', confidence=1.0)]
+            ),
+            Line(
+              (words): [Word(value='Consumo', confidence=1.0)]
+            ),
+            Line(
+              (words): [
+                Word(value='Punta', confidence=0.97),
+                Word(value='184,110', confidence=1.0),
+                Word(value='KWhx0,179959', confidence=0.94),
+                Word(value='Eur/kWh.', confidence=0.88),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Consumo', confidence=0.99),
+                Word(value='Llano', confidence=0.99),
+                Word(value='194,270', confidence=1.0),
+                Word(value='KWhx0,126983', confidence=0.81),
+                Word(value='Eur/kWh.', confidence=0.94),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Consumo', confidence=0.98),
+                Word(value='Valle', confidence=0.83),
+                Word(value='326,450', confidence=1.0),
+                Word(value='KWhx0,106637', confidence=0.79),
+                Word(value='Eur/kWh.', confidence=0.98),
+              ]
+            ),
+            Line(
+              (words): [Word(value='Varios', confidence=1.0)]
+            ),
+            Line(
+              (words): [
+                Word(value='Financiaciôn', confidence=0.8),
+                Word(value='Bono', confidence=1.0),
+                Word(value='Social', confidence=0.99),
+                Word(value='62', confidence=1.0),
+                Word(value='dias.x0,038455', confidence=0.49),
+                Word(value='EUR/dia.', confidence=0.82),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Alquiler', confidence=0.98),
+                Word(value='deld', confidence=0.39),
+                Word(value='contador', confidence=0.84),
+                Word(value='(33', confidence=0.99),
+                Word(value='diasx0,026630', confidence=0.92),
+                Word(value='Eurldia)', confidence=0.87),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Alquiler', confidence=0.98),
+                Word(value='delo', confidence=0.57),
+                Word(value='contador', confidence=1.0),
+                Word(value='(29', confidence=1.0),
+                Word(value='diasx0,026630', confidence=0.66),
+                Word(value='Eurldia)', confidence=0.71),
+              ]
+            ),
+            Line(
+              (words): [Word(value='Impuestos', confidence=1.0)]
+            ),
+            Line(
+              (words): [
+                Word(value='Impuesto', confidence=1.0),
+                Word(value='electricidad', confidence=0.99),
+                Word(value='(CIM)', confidence=0.95),
+                Word(value='0,705', confidence=0.99),
+                Word(value='MWhx1', confidence=1.0),
+                Word(value='1,00', confidence=0.98),
+                Word(value='Eur/MWh.', confidence=0.91),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='IVAI', confidence=0.62),
+                Word(value='normal', confidence=0.71),
+                Word(value='5%', confidence=0.98),
+                Word(value='$/115,06.', confidence=0.71),
+              ]
+            ),
+            Line(
+              (words): [Word(value='TOTAL', confidence=1.0)]
+            ),
+            Line(
+              (words): [
+                Word(value='"Importe', confidence=0.9),
+                Word(value='de', confidence=0.79),
+                Word(value='13der', confidence=1.0),
+                Word(value='delae', confidence=0.96),
+                Word(value='energia', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [Word(value='mayo.', confidence=0.6)]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [Word(value='CUPS:', confidence=0.93)]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [Word(value='ES03140585723001LTOF', confidence=0.45)]
+            ),
+            Line(
+              (words): [
+                Word(value='Distribuidora:', confidence=0.56),
+                Word(value='EDISTRIBUCION', confidence=0.65),
+                Word(value='REDES', confidence=1.0),
+                Word(value='DIGITALES', confidence=0.97),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Referencia', confidence=0.99),
+                Word(value='del', confidence=1.0),
+                Word(value='contrato', confidence=1.0),
+                Word(value='de', confidence=1.0),
+                Word(value='acceso:', confidence=1.0),
+                Word(value='000436969070', confidence=0.53),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Peaje', confidence=1.0),
+                Word(value='det', confidence=0.72),
+                Word(value='transporte', confidence=0.97),
+                Word(value='y', confidence=0.95),
+                Word(value='distribuciôn:', confidence=0.82),
+                Word(value='2.0TD', confidence=0.89),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Segmento', confidence=1.0),
+                Word(value='de', confidence=1.0),
+                Word(value='cargos:1', confidence=0.91),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='No', confidence=0.78),
+                Word(value='contador:', confidence=0.95),
+                Word(value='204736856', confidence=1.0),
+              ]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [
+                Word(value='DESTINO', confidence=1.0),
+                Word(value='DEL', confidence=1.0),
+                Word(value='IMPORTE', confidence=1.0),
+                Word(value='DE', confidence=1.0),
+                Word(value='LA', confidence=1.0),
+                Word(value='FACTURA', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='64,3%', confidence=0.6),
+                Word(value='Energia.', confidence=0.78),
+                Word(value='Incluye,', confidence=0.65),
+                Word(value='entre', confidence=1.0),
+                Word(value='otros,', confidence=1.0),
+                Word(value='elcoste', confidence=0.83),
+                Word(value='delac', confidence=0.84),
+                Word(value='energia', confidence=1.0),
+                Word(value='en', confidence=0.87),
+                Word(value='el', confidence=0.96),
+                Word(value='mercado,', confidence=0.99),
+                Word(value='losp', confidence=0.97),
+                Word(value='pagos', confidence=1.0),
+                Word(value='por', confidence=0.99),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='capacidadylar', confidence=0.94),
+                Word(value='retribucion', confidence=0.69),
+                Word(value='alOperador', confidence=0.98),
+                Word(value='del', confidence=0.64),
+                Word(value='Sistema', confidence=1.0),
+                Word(value='(REE)yalOperador', confidence=0.53),
+                Word(value='del', confidence=0.82),
+                Word(value='Mercado', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='18,81%', confidence=1.0),
+                Word(value='Peajes', confidence=1.0),
+                Word(value='det', confidence=0.75),
+                Word(value='transporte', confidence=0.5),
+                Word(value='ydistribucion.', confidence=0.6),
+                Word(value='Retribuyen', confidence=0.9),
+                Word(value='las', confidence=0.85),
+                Word(value='redes', confidence=0.99),
+                Word(value='de', confidence=1.0),
+                Word(value='transportey', confidence=0.99),
+                Word(value='yo', confidence=0.59),
+                Word(value='distribucion.', confidence=0.64),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='10,18%', confidence=0.98),
+                Word(value='Cargos:', confidence=0.98),
+                Word(value='Incluyen', confidence=0.42),
+                Word(value='la', confidence=0.98),
+                Word(value='retribuciôna', confidence=0.6),
+                Word(value='alas', confidence=1.0),
+                Word(value='renovables,', confidence=1.0),
+                Word(value='cogeneraciony', confidence=0.64),
+                Word(value='residuos', confidence=1.0),
+                Word(value='(RECORE)', confidence=0.82),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='0,00%,', confidence=1.0),
+                Word(value='las', confidence=1.0),
+                Word(value='anualidades', confidence=0.98),
+                Word(value='deld', confidence=1.0),
+                Word(value='déficit81,', confidence=0.67),
+                Word(value=',00%,', confidence=0.89),
+                Word(value='elsobrecoste', confidence=1.0),
+                Word(value='de', confidence=1.0),
+                Word(value='generacion', confidence=0.82),
+                Word(value='en', confidence=0.84),
+                Word(value='TNP', confidence=1.0),
+                Word(value='(territoriosno', confidence=0.95),
+              ]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [
+              Word(value='16,01€', confidence=0.92),
+              Word(value='17,72€', confidence=0.96),
+              Word(value='Elimporte', confidence=0.93),
+              Word(value='total', confidence=0.93),
+              Word(value='des', confidence=1.0),
+              Word(value='suf', confidence=0.98),
+              Word(value='factura', confidence=0.8),
+              Word(value='tiene', confidence=0.99),
+              Word(value='este', confidence=1.0),
+              Word(value='destino:', confidence=0.6),
+            ]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [Word(value='1,71€', confidence=0.94)]
+            ),
+            Line(
+              (words): [Word(value='92,61€', confidence=0.71)]
+            ),
+            Line(
+              (words): [
+                Word(value='24,67€', confidence=0.95),
+                Word(value='33,13€', confidence=0.89),
+              ]
+            ),
+            Line(
+              (words): [Word(value='34,81€', confidence=0.98)]
+            ),
+            Line(
+              (words): [Word(value='4,03€', confidence=0.92)]
+            ),
+            Line(
+              (words): [
+                Word(value='2,38€', confidence=0.98),
+                Word(value='0,88€', confidence=0.98),
+              ]
+            ),
+            Line(
+              (words): [Word(value='0,77€', confidence=0.92)]
+            ),
+            Line(
+              (words): [Word(value='6,45€', confidence=0.84)]
+            ),
+            Line(
+              (words): [Word(value='0,70€', confidence=0.71)]
+            ),
+            Line(
+              (words): [Word(value='120,81€', confidence=0.94)]
+            ),
+            Line(
+              (words): [
+                Word(value='Decreto-ley1', confidence=0.54),
+                Word(value='10/2022,', confidence=1.0),
+              ]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [
+                Word(value='-', confidence=0.32),
+                Word(value='1,37%', confidence=1.0),
+                Word(value='Alquiler', confidence=0.96),
+                Word(value='dec', confidence=0.9),
+                Word(value='contador', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='-', confidence=0.35),
+                Word(value='5,34%1', confidence=0.59),
+                Word(value='Impuestos', confidence=0.98),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='peninsulares)', confidence=0.96),
+                Word(value='18,00%y', confidence=1.0),
+                Word(value='otros', confidence=0.97),
+                Word(value='1,00%.', confidence=0.98),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='INFORMACION', confidence=0.97),
+                Word(value='DEL', confidence=1.0),
+                Word(value='CONSUMO', confidence=0.99),
+                Word(value='ELECTRICO', confidence=0.94),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Aefectos', confidence=0.98),
+                Word(value='de', confidence=1.0),
+                Word(value='factui', confidence=0.84),
+                Word(value='delos', confidence=0.98),
+                Word(value='peajes', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Lectura', confidence=1.0),
+                Word(value='Lectura', confidence=0.99),
+              ]
+            ),
+            Line(
+              (words): [Word(value='real', confidence=1.0)]
+            ),
+            Line(
+              (words): [
+                Word(value='12.632,47', confidence=1.0),
+                Word(value='12.816,58', confidence=0.99),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='3.218,01', confidence=1.0),
+                Word(value='3.412,28', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [Word(value='4.460,78', confidence=1.0)]
+            ),
+            Line(
+              (words): [
+                Word(value='INFORMACION', confidence=0.95),
+                Word(value='DE', confidence=1.0),
+                Word(value='SU', confidence=0.91),
+                Word(value='PRODUCTO', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Real', confidence=1.0),
+                Word(value='junio', confidence=1.0),
+                Word(value='de:', confidence=0.68),
+                Word(value='2022', confidence=1.0),
+                Word(value='entro', confidence=0.51),
+                Word(value='en', confidence=0.97),
+                Word(value='aplicaciôn', confidence=0.69),
+                Word(value='el', confidence=0.68),
+                Word(value='"tope', confidence=1.0),
+                Word(value='del', confidence=1.0),
+                Word(value='gas"', confidence=1.0),
+                Word(value='regulado', confidence=1.0),
+                Word(value='ene', confidence=0.88),
+                Word(value='el', confidence=0.94),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Decreto-Ley', confidence=0.83),
+                Word(value='10/2022,', confidence=1.0),
+                Word(value='de', confidence=1.0),
+                Word(value='13', confidence=0.73),
+                Word(value='de', confidence=1.0),
+                Word(value='mayo,', confidence=0.58),
+                Word(value='que', confidence=1.0),
+                Word(value='establece', confidence=1.0),
+                Word(value='con', confidence=1.0),
+                Word(value='caràcter', confidence=0.93),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='temporal', confidence=1.0),
+                Word(value='un', confidence=1.0),
+                Word(value='mecanismo', confidence=0.82),
+                Word(value='de', confidence=0.95),
+                Word(value='ajuste', confidence=1.0),
+                Word(value='de', confidence=0.99),
+                Word(value='costes', confidence=0.99),
+                Word(value='dep', confidence=0.55),
+                Word(value='produccion', confidence=0.71),
+                Word(value='para', confidence=0.89),
+                Word(value='la', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='reducciôn', confidence=0.74),
+                Word(value='del', confidence=1.0),
+                Word(value='precio', confidence=0.99),
+                Word(value='de', confidence=1.0),
+                Word(value='la', confidence=0.99),
+                Word(value='electricidad', confidence=0.84),
+                Word(value='en', confidence=0.99),
+                Word(value='el', confidence=1.0),
+                Word(value='mercado', confidence=0.97),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='cumplimiento', confidence=0.99),
+                Word(value='de', confidence=1.0),
+                Word(value='esta', confidence=0.99),
+                Word(value='normativa,', confidence=0.84),
+                Word(value='sei', confidence=0.78),
+                Word(value='incluirà', confidence=0.68),
+                Word(value='ens', confidence=1.0),
+                Word(value='sus', confidence=1.0),
+                Word(value='facturas', confidence=0.98),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='regulado', confidence=1.0),
+                Word(value='"Coste', confidence=1.0),
+                Word(value='tope', confidence=1.0),
+                Word(value='del', confidence=0.97),
+                Word(value='RDL', confidence=0.99),
+                Word(value='10/2022".', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Las', confidence=1.0),
+                Word(value='comercializadoras', confidence=0.72),
+                Word(value='en', confidence=1.0),
+                Word(value='mercado', confidence=0.99),
+                Word(value='libre', confidence=0.85),
+                Word(value='pueden', confidence=1.0),
+                Word(value='voluntariamente', confidence=0.54),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='mayo,', confidence=0.98),
+                Word(value='dentro', confidence=0.94),
+                Word(value='de', confidence=0.99),
+                Word(value='sus', confidence=1.0),
+                Word(value='costes', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [Word(value='forma', confidence=0.64)]
+            ),
+            Line(
+              (words): [
+                Word(value='diferenciada', confidence=1.0),
+                Word(value='a', confidence=0.98),
+                Word(value='sus', confidence=0.93),
+                Word(value='consumidores.', confidence=0.64),
+                Word(value='Ene', confidence=0.73),
+                Word(value='este', confidence=1.0),
+                Word(value='caso', confidence=0.73),
+                Word(value='su', confidence=1.0),
+                Word(value='comercializadora', confidence=0.48),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='ha', confidence=1.0),
+                Word(value='optado', confidence=1.0),
+                Word(value='por', confidence=1.0),
+                Word(value='esta', confidence=1.0),
+                Word(value='uitima', confidence=0.44),
+                Word(value='opciôn.', confidence=0.63),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='ATENCION', confidence=1.0),
+                Word(value='AL', confidence=1.0),
+                Word(value='CLIENTE', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Atencion', confidence=0.77),
+                Word(value='/', confidence=0.99),
+                Word(value='Reclamaciones', confidence=0.5),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='800760909', confidence=1.0),
+                Word(value='(tif.', confidence=0.63),
+                Word(value='gratuito,', confidence=1.0),
+                Word(value='disponible', confidence=0.99),
+                Word(value='24h)', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [Word(value='www.endnsydlantescom', confidence=0.35)]
+            ),
+            Line(
+              (words): [
+                Word(value='C/', confidence=0.7),
+                Word(value='teiNe', confidence=0.13),
+                Word(value='Ribera', confidence=1.0),
+                Word(value='del', confidence=0.99),
+                Word(value='Loira', confidence=1.0),
+                Word(value='60-', confidence=0.96),
+                Word(value='28042', confidence=1.0),
+                Word(value='Madrid', confidence=0.99),
+                Word(value='com', confidence=0.72),
+                Word(value='(solo', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Endesa', confidence=0.98),
+                Word(value='informacions', confidence=0.8),
+                Word(value='Energia', confidence=1.0),
+                Word(value='sobre', confidence=1.0),
+                Word(value='està', confidence=0.6),
+                Word(value='las', confidence=1.0),
+                Word(value='adherida', confidence=0.97),
+                Word(value='reclamaciones', confidence=0.99),
+                Word(value='al', confidence=0.99),
+                Word(value='Sistema', confidence=0.99),
+                Word(value='Arbitralde', confidence=0.52),
+                Word(value='Consumo.', confidence=0.91),
+                Word(value='Para', confidence=0.99),
+                Word(value='ampliarla', confidence=0.97),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='consultar', confidence=1.0),
+                Word(value='www.', confidence=0.91),
+                Word(value='endesacientes.com.', confidence=0.57),
+                Word(value='quep', confidence=0.7),
+                Word(value='puedens', confidence=1.0),
+                Word(value='sert', confidence=0.88),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Unav', confidence=0.5),
+                Word(value='sobre', confidence=1.0),
+                Word(value='vez', confidence=0.94),
+                Word(value='elc', confidence=0.68),
+                Word(value='contacto', confidence=0.92),
+                Word(value='realizada', confidence=0.98),
+                Word(value='de', confidence=1.0),
+                Word(value='la', confidence=0.67),
+                Word(value='suministroc', confidence=0.62),
+                Word(value='reclamacion', confidence=0.48),
+                Word(value='facturaciones,', confidence=0.98),
+                Word(value='ante', confidence=0.71),
+                Word(value='la', confidence=0.96),
+                Word(value='compahia', confidence=0.73),
+                Word(value='eléctrica,', confidence=0.83),
+                Word(value='ysipersistel', confidence=0.9),
+                Word(value='la', confidence=0.99),
+                Word(value='discrepancia', confidence=0.63),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Municipaldei', confidence=0.51),
+                Word(value='informacion', confidence=0.86),
+                Word(value='al', confidence=0.99),
+                Word(value='Consumidor', confidence=1.0),
+                Word(value='(O.M.LC)', confidence=0.53),
+                Word(value='también', confidence=0.82),
+                Word(value='dela', confidence=0.63),
+                Word(value='localidado,', confidence=0.97),
+                Word(value='estarà', confidence=0.94),
+                Word(value='disponiblel', confidence=0.85),
+                Word(value='ensuc', confidence=0.99),
+                Word(value='la', confidence=1.0),
+                Word(value='caso,', confidence=0.99),
+                Word(value='Olicina', confidence=0.5),
+                Word(value='la', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Direccion', confidence=0.88),
+                Word(value='General', confidence=1.0),
+                Word(value='de', confidence=1.0),
+                Word(value='Consumoo', confidence=1.0),
+                Word(value='ode', confidence=0.99),
+                Word(value='Industria', confidence=0.98),
+                Word(value='del', confidence=0.93),
+                Word(value='lac', confidence=0.98),
+                Word(value='comunidad', confidence=0.91),
+                Word(value='autônoma.', confidence=0.8),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Averias', confidence=1.0),
+                Word(value='/', confidence=1.0),
+                Word(value='Urgencias', confidence=1.0),
+                Word(value='distribuidora', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='8007', confidence=0.78),
+                Word(value='760706-', confidence=0.88),
+                Word(value='EDISTRIBUCION', confidence=0.95),
+                Word(value='REDES', confidence=1.0),
+                Word(value='DIGITALES', confidence=1.0),
+              ]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [Word(value='(OMIE).', confidence=0.65)]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [
+              Word(value='5,75€', confidence=0.97),
+              Word(value='Periodo', confidence=1.0),
+              Word(value='08/08/2023', confidence=0.62),
+              Word(value='09/10/2023', confidence=1.0),
+              Word(value='Multipl.', confidence=0.89),
+              Word(value='Ajuste', confidence=0.64),
+              Word(value='Consumo', confidence=1.0),
+            ]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [Word(value='real', confidence=0.98)]
+            ),
+            Line(
+              (words): [Word(value='4.787,23', confidence=0.66)]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [Word(value='Energia', confidence=1.0)]
+            ),
+            Line(
+              (words): [Word(value='Punta', confidence=1.0)]
+            ),
+            Line(
+              (words): [Word(value='Llano', confidence=0.92)]
+            ),
+            Line(
+              (words): [
+                Word(value='EI15', confidence=0.49),
+                Word(value='dej', confidence=1.0),
+              ]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [
+              Word(value='aln', confidence=0.99),
+              Word(value='mecanismoi', confidence=0.54),
+              Word(value='ibéricor', confidence=0.76),
+              Word(value='reguladop', confidence=0.79),
+              Word(value='por', confidence=0.99),
+              Word(value='el', confidence=0.96),
+              Word(value='Reall', confidence=0.66),
+            ]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [Word(value='kWh', confidence=0.94)]
+            ),
+            Line(
+              (words): [
+                Word(value='0,00', confidence=1.0),
+                Word(value='184,11', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='0,00', confidence=1.0),
+                Word(value='194,27', confidence=0.98),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='0,00', confidence=1.0),
+                Word(value='326,45', confidence=1.0),
+              ]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [Word(value='1,00', confidence=0.97)]
+            ),
+            Line(
+              (words): [Word(value='1,00', confidence=1.0)]
+            ),
+            Line(
+              (words): [Word(value='1,00', confidence=1.0)]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [
+                Word(value='Eneln', confidence=0.99),
+                Word(value='mes', confidence=0.9),
+                Word(value='des', confidence=0.78),
+                Word(value='septiembre', confidence=0.53),
+                Word(value='de', confidence=1.0),
+                Word(value='2023€', confidence=0.67),
+                Word(value='el', confidence=0.47),
+                Word(value='precio', confidence=1.0),
+                Word(value='medioc', confidence=0.65),
+                Word(value='dela', confidence=0.98),
+                Word(value='ajuste', confidence=0.97),
+                Word(value='pagado', confidence=0.5),
+                Word(value='pork', confidence=0.94),
+                Word(value='lad', confidence=1.0),
+                Word(value='demanda', confidence=0.61),
+                Word(value='alOMIE', confidence=0.52),
+                Word(value='en', confidence=0.76),
+                Word(value='Valle', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='compensacion;', confidence=0.84),
+                Word(value='pore', confidence=1.0),
+                Word(value='elr', confidence=0.96),
+                Word(value='mecanismoi', confidence=0.83),
+                Word(value='ibérico', confidence=0.99),
+                Word(value='(tope', confidence=0.78),
+                Word(value='delg', confidence=1.0),
+                Word(value='gas),', confidence=0.83),
+                Word(value='fuec', confidence=0.8),
+                Word(value='de0,00', confidence=0.96),
+                Word(value='EMWh.', confidence=0.45),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='septiembre', confidence=0.49),
+                Word(value='Elector', confidence=0.99),
+                Word(value='reductor', confidence=0.81),
+                Word(value='de', confidence=1.0),
+                Word(value='2023', confidence=0.99),
+                Word(value='deln', confidence=0.9),
+                Word(value='mecanismoi', confidence=0.99),
+                Word(value='elprecior', confidence=0.83),
+                Word(value='medio', confidence=0.9),
+                Word(value='ibéricode', confidence=0.95),
+                Word(value='de', confidence=0.73),
+                Word(value='casaciône', confidence=0.7),
+                Word(value='ajuster', confidence=0.98),
+                Word(value='regulado', confidence=0.52),
+                Word(value='pore', confidence=1.0),
+                Word(value='ell', confidence=0.81),
+                Word(value='RDL', confidence=0.99),
+                Word(value='10/2022:', confidence=0.82),
+                Word(value='Ene', confidence=0.97),
+                Word(value='elr', confidence=0.9),
+                Word(value='mes', confidence=0.97),
+                Word(value='de', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='103,346', confidence=0.58),
+                Word(value='EMWh,', confidence=0.69),
+                Word(value='elprecio', confidence=0.97),
+                Word(value='medioi', confidence=0.5),
+                Word(value='incluyendo', confidence=0.75),
+                Word(value='ela', confidence=0.99),
+                Word(value='ajuste', confidence=0.76),
+                Word(value='ene', confidence=0.77),
+                Word(value='pagadoy', confidence=0.66),
+                Word(value='elmercado', confidence=0.56),
+                Word(value='pori', confidence=0.5),
+                Word(value='lac', confidence=0.85),
+                Word(value='diario', confidence=1.0),
+                Word(value='demanda', confidence=0.7),
+                Word(value='de', confidence=1.0),
+                Word(value='electricidad', confidence=0.62),
+                Word(value='alOMIE', confidence=0.97),
+                Word(value='en', confidence=1.0),
+                Word(value='luede', confidence=0.98),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='compensacion;', confidence=0.49),
+                Word(value='quel', confidence=0.71),
+                Word(value='hubierar', confidence=0.75),
+                Word(value='resultados', confidence=1.0),
+                Word(value='por', confidence=1.0),
+                Word(value='eln', confidence=1.0),
+                Word(value='mecanismo', confidence=0.59),
+                Word(value='sine', confidence=1.0),
+                Word(value='el', confidence=0.53),
+                Word(value='mecanismoi', confidence=0.66),
+                Word(value='ibérico', confidence=0.98),
+                Word(value='ibéricol', confidence=0.72),
+                Word(value='(tope', confidence=1.0),
+                Word(value='delg', confidence=1.0),
+                Word(value='habrias', confidence=0.59),
+                Word(value='gas)!', confidence=0.68),
+                Word(value='sidode', confidence=0.98),
+                Word(value='fue', confidence=0.84),
+                Word(value='de', confidence=0.49),
+                Word(value='103,346', confidence=0.65),
+                Word(value='103,34', confidence=0.98),
+                Word(value='€/MWh,', confidence=0.27),
+                Word(value='EMWh.', confidence=0.45),
+                Word(value='yelprecio', confidence=0.86),
+                Word(value='medio', confidence=0.71),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Env', confidence=0.5),
+                Word(value='virtudo', confidence=0.63),
+                Word(value='delF', confidence=0.68),
+                Word(value='Real', confidence=0.62),
+                Word(value='Decreto-ley', confidence=0.97),
+                Word(value='12/2021,', confidence=0.52),
+                Word(value='de240', confidence=0.57),
+                Word(value='dej', confidence=0.97),
+                Word(value='junio,', confidence=0.84),
+                Word(value='olIVA', confidence=0.51),
+                Word(value='aplicablea', confidence=0.95),
+                Word(value='asuf', confidence=1.0),
+                Word(value='factura', confidence=0.92),
+                Word(value='see', confidence=0.7),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Env', confidence=0.86),
+                Word(value='virtud', confidence=0.65),
+                Word(value='delF', confidence=0.8),
+                Word(value='Real', confidence=0.94),
+                Word(value='Decreto-ley', confidence=0.99),
+                Word(value='17/2021,', confidence=1.0),
+                Word(value='de', confidence=1.0),
+                Word(value='14', confidence=0.93),
+                Word(value='des', confidence=1.0),
+                Word(value='sepliembre,', confidence=0.84),
+                Word(value='elimpuesto', confidence=0.97),
+                Word(value='especial', confidence=0.87),
+                Word(value='la', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='electricidada', confidence=0.62),
+                Word(value='aplicable', confidence=0.96),
+                Word(value='asut', confidence=0.92),
+                Word(value='facturas', confidence=0.86),
+                Word(value='see', confidence=0.57),
+                Word(value='encuentrar', confidence=0.98),
+                Word(value='reducido', confidence=0.46),
+                Word(value='del5,11269632%', confidence=0.61),
+                Word(value='al0,5%.', confidence=0.54),
+                Word(value='sobrel', confidence=0.46),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Incluido', confidence=0.98),
+                Word(value='importef', confidence=0.93),
+                Word(value='facturados', confidence=0.53),
+                Word(value='estâ', confidence=0.26),
+                Word(value='elcoste', confidence=0.92),
+                Word(value='delp', confidence=0.99),
+                Word(value='peaje', confidence=1.0),
+                Word(value='det', confidence=1.0),
+                Word(value='transportey', confidence=0.9),
+                Word(value='distribucion,', confidence=0.48),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='de2', confidence=0.55),
+                Word(value='22,72€(13,1', confidence=0.51),
+                Word(value='19', confidence=1.0),
+                Word(value='Epotencia,', confidence=0.7),
+                Word(value='9,53€', confidence=0.66),
+                Word(value='por', confidence=1.0),
+                Word(value='energia', confidence=0.97),
+                Word(value='activa),', confidence=0.58),
+                Word(value='ydek', confidence=1.0),
+                Word(value='los', confidence=1.0),
+                Word(value='cargos,', confidence=0.99),
+                Word(value='quel', confidence=0.55),
+                Word(value='ha', confidence=0.72),
+                Word(value='que', confidence=0.59),
+                Word(value='de', confidence=1.0),
+                Word(value='ha', confidence=0.97),
+                Word(value='sido', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='(1,79', confidence=0.61),
+                Word(value='Epotencia,', confidence=0.82),
+                Word(value='10,51', confidence=1.0),
+                Word(value='Epore', confidence=0.55),
+                Word(value='energia', confidence=0.93),
+                Word(value='activa).', confidence=0.81),
+                Word(value='Losp', confidence=0.51),
+                Word(value='precios', confidence=1.0),
+                Word(value='dey', confidence=0.59),
+                Word(value='peajes', confidence=0.91),
+                Word(value='det', confidence=1.0),
+                Word(value='transportey', confidence=1.0),
+                Word(value='sido', confidence=0.81),
+                Word(value='12,3€', confidence=0.96),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Apartir', confidence=0.91),
+                Word(value='del', confidence=0.98),
+                Word(value='1dee', confidence=0.99),
+                Word(value='enero', confidence=0.99),
+                Word(value='de:', confidence=0.52),
+                Word(value='20231', confidence=0.98),
+                Word(value='los', confidence=0.99),
+                Word(value='precios', confidence=0.99),
+                Word(value='des', confidence=1.0),
+                Word(value='su', confidence=0.82),
+                Word(value='tarifa', confidence=0.99),
+                Word(value='con!', confidence=0.83),
+                Word(value='Endesas', confidence=1.0),
+                Word(value='se', confidence=0.96),
+                Word(value='hana', confidence=1.0),
+                Word(value='actualizado', confidence=0.66),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='trasladandol', confidence=0.93),
+                Word(value='lasv', confidence=0.92),
+                Word(value='variacionesr', confidence=0.79),
+                Word(value='reguladas', confidence=1.0),
+                Word(value='enlal', confidence=0.78),
+                Word(value='Resolucionde', confidence=0.71),
+                Word(value='15ded', confidence=1.0),
+                Word(value='diciembre', confidence=0.75),
+                Word(value='de', confidence=0.77),
+                Word(value='del', confidence=0.58),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='pori', confidence=0.8),
+                Word(value='lac', confidence=0.94),
+                Word(value='que', confidence=1.0),
+                Word(value='see', confidence=0.6),
+                Word(value='establecen)', confidence=0.36),
+                Word(value='los', confidence=0.98),
+                Word(value='valores', confidence=1.0),
+                Word(value='de', confidence=0.99),
+                Word(value='losp', confidence=0.72),
+                Word(value='peajes', confidence=0.98),
+                Word(value='de', confidence=0.83),
+                Word(value='accesod', confidence=0.48),
+                Word(value='de', confidence=1.0),
+                Word(value='electricidad', confidence=0.94),
+                Word(value='(BOE', confidence=0.8),
+                Word(value='2022', confidence=0.86),
+                Word(value='22-1', confidence=0.95),
+                Word(value='laCNMC', confidence=0.92),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='enlaOrden)', confidence=0.48),
+                Word(value='TED/1312/2022', confidence=0.98),
+                Word(value='de', confidence=0.58),
+                Word(value='23d', confidence=0.69),
+                Word(value='de', confidence=0.96),
+                Word(value='diciembre', confidence=0.99),
+                Word(value='pork', confidence=0.96),
+                Word(value='laques', confidence=0.99),
+                Word(value='se', confidence=1.0),
+                Word(value='establecen!', confidence=0.72),
+                Word(value='los', confidence=1.0),
+                Word(value='precios', confidence=0.98),
+                Word(value='del', confidence=0.88),
+                Word(value='-12-2022),', confidence=0.76),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='cargosy', confidence=0.99),
+                Word(value='15de', confidence=0.68),
+                Word(value='diciembre', confidence=0.99),
+                Word(value='diversos', confidence=1.0),
+                Word(value='de', confidence=0.66),
+                Word(value='costes', confidence=1.0),
+                Word(value='20220', confidence=0.8),
+                Word(value='dela', confidence=0.99),
+                Word(value='CNMC', confidence=0.99),
+                Word(value='dels', confidence=0.95),
+                Word(value='pork', confidence=0.79),
+                Word(value='sistema', confidence=0.98),
+                Word(value='la', confidence=0.54),
+                Word(value='ques', confidence=1.0),
+                Word(value='eléctrico', confidence=0.73),
+                Word(value='se', confidence=1.0),
+                Word(value='establecel', confidence=0.61),
+                Word(value='(BOE', confidence=0.73),
+                Word(value='lacuantia', confidence=0.47),
+                Word(value='29-12-2022).)', confidence=0.49),
+                Word(value='der', confidence=1.0),
+                Word(value='retribuciôn', confidence=0.62),
+                Word(value='yenla', confidence=0.7),
+                Word(value='Resoluciônde', confidence=0.53),
+                Word(value='los', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='dels', confidence=1.0),
+                Word(value='sistema', confidence=0.9),
+                Word(value='eléctrico', confidence=0.89),
+                Word(value='(BOE:', confidence=0.74),
+                Word(value='26-12-2022).', confidence=0.99),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='INFORMACION', confidence=0.87),
+                Word(value='PARA', confidence=1.0),
+                Word(value='EL', confidence=1.0),
+                Word(value='CONSUMIDOR', confidence=0.84),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Codigo', confidence=0.89),
+                Word(value='QRy', confidence=0.77),
+                Word(value='enlace!', confidence=0.7),
+                Word(value='httos:', confidence=0.96),
+                Word(value='/Icomparador.', confidence=0.56),
+                Word(value='cnmc.gob.es', confidence=0.7),
+                Word(value='para', confidence=0.99),
+                Word(value='acceder', confidence=0.98),
+                Word(value='al', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Comparador', confidence=0.62),
+                Word(value='de', confidence=1.0),
+                Word(value='Ofertas', confidence=1.0),
+                Word(value='del', confidence=1.0),
+                Word(value='la', confidence=0.97),
+                Word(value='CNMC:', confidence=1.0),
+              ]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [
+                Word(value='reducido', confidence=0.38),
+                Word(value='del2', confidence=1.0),
+                Word(value='21%al5', confidence=0.62),
+                Word(value='5%.', confidence=0.99),
+              ]
+            ),
+            Line(
+              (words): [Word(value='en', confidence=0.64)]
+            ),
+            Line(
+              (words): [
+                Word(value='hans', confidence=1.0),
+                Word(value='sido', confidence=1.0),
+                Word(value='publicados', confidence=0.98),
+                Word(value='en!', confidence=0.53),
+                Word(value='lal', confidence=0.71),
+              ]
+            ),
+            Line(
+              (words): [Word(value='dek', confidence=0.99)]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [Word(value='encuentra', confidence=0.95)]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [Word(value='En', confidence=1.0)]
+            ),
+            Line(
+              (words): [Word(value='mayorista.', confidence=0.99)]
+            ),
+            Line(
+              (words): [
+                Word(value='el', confidence=0.94),
+                Word(value='concepto', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [Word(value='elegir', confidence=1.0)]
+            ),
+            Line(
+              (words): [
+                Word(value='10/2022,', confidence=0.83),
+                Word(value='de', confidence=1.0),
+                Word(value='13de', confidence=1.0),
+              ]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [Word(value='gas', confidence=1.0)]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [
+              Word(value='de1', confidence=0.79),
+              Word(value='15de', confidence=1.0),
+              Word(value='diciembre', confidence=0.47),
+              Word(value='de', confidence=0.9),
+              Word(value='20220', confidence=0.93),
+              Word(value='dela', confidence=0.88),
+              Word(value='CNMC', confidence=0.88),
+              Word(value='(BOE', confidence=0.71),
+              Word(value='distribucion', confidence=0.56),
+            ]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [
+              Word(value='yloso', confidence=0.51),
+              Word(value='los', confidence=1.0),
+              Word(value='cargos', confidence=0.6),
+              Word(value='enlac', confidence=0.52),
+              Word(value='Orden', confidence=0.71),
+              Word(value='TED/1312/2022', confidence=1.0),
+              Word(value='de:', confidence=0.89),
+              Word(value='23dec', confidence=0.74),
+              Word(value='diciembre', confidence=0.67),
+              Word(value='(BOE', confidence=0.6),
+              Word(value='29-12-2022).', confidence=0.97),
+              Word(value='22-12-2022)', confidence=0.75),
+              Word(value='repercutir', confidence=0.98),
+              Word(value='el', confidence=1.0),
+              Word(value='importe', confidence=0.77),
+              Word(value='del', confidence=0.93),
+              Word(value='lae', confidence=0.89),
+            ]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [Word(value='asociada', confidence=1.0)]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [
+              Word(value='dela', confidence=0.98),
+              Word(value='alquiler', confidence=0.97),
+              Word(value='delo', confidence=0.62),
+              Word(value='contador!', confidence=0.73),
+              Word(value='ha', confidence=0.55),
+              Word(value='sido', confidence=0.54),
+              Word(value='publicado', confidence=0.84),
+              Word(value='enla', confidence=0.95),
+              Word(value='Orden', confidence=0.99),
+              Word(value='IET1', confidence=0.95),
+              Word(value='1491/2013', confidence=0.99),
+              Word(value='de3dea', confidence=0.99),
+              Word(value='agosto.', confidence=0.99),
+              Word(value='Elprecio', confidence=0.91),
+              Word(value='mecanismo', confidence=0.75),
+              Word(value='ibérico', confidence=0.99),
+              Word(value='regulado', confidence=1.0),
+              Word(value='energia', confidence=1.0),
+              Word(value='por', confidence=0.99),
+              Word(value='el', confidence=1.0),
+              Word(value='Real', confidence=1.0),
+              Word(value='Decreto-ley', confidence=0.95),
+              Word(value='ala', confidence=0.59),
+              Word(value='compensacion', confidence=0.8),
+              Word(value='del', confidence=1.0),
+            ]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [
+              Word(value='de', confidence=0.97),
+              Word(value='aprovisionamiento,', confidence=0.62),
+              Word(value='o', confidence=0.97),
+              Word(value='bien', confidence=1.0),
+              Word(value='trasladarlo', confidence=0.99),
+              Word(value='de', confidence=1.0),
+            ]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [Word(value='del', confidence=0.72)]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [
+                Word(value='correo', confidence=1.0),
+                Word(value='postal)', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='través', confidence=0.97),
+                Word(value='dela', confidence=1.0),
+                Word(value='arbitraje', confidence=1.0),
+              ]
+            ),
+          ]
+          (artefacts): []
+        ),
+      ]
+    ),
+    Page(
+      dimensions=(2304, 1631)
+      (blocks): [
+        Block(
+          (lines): [Line(
+            (words): [
+              Word(value='ORIGEN', confidence=1.0),
+              Word(value='DELAELECTRICIDAD', confidence=0.7),
+              Word(value='DE', confidence=1.0),
+              Word(value='SU', confidence=0.94),
+              Word(value='COMERCIALIZADORA', confidence=0.36),
+              Word(value='2022.', confidence=1.0),
+              Word(value='IMPACTO', confidence=0.97),
+              Word(value='AMBIENTALDE:', confidence=0.5),
+            ]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [Word(value='BUCOMAIRCAIEZADOAAZONEZ', confidence=0.23)]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [
+              Word(value='Endesal', confidence=0.54),
+              Word(value='Energias', confidence=0.96),
+              Word(value='S.A.U', confidence=0.82),
+            ]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [
+                Word(value='Otrasr', confidence=0.91),
+                Word(value='norenovables', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [Word(value='6%', confidence=1.0)]
+            ),
+            Line(
+              (words): [Word(value='Nuclear', confidence=0.98)]
+            ),
+            Line(
+              (words): [Word(value='24%', confidence=1.0)]
+            ),
+            Line(
+              (words): [Word(value='Fuel/Gas', confidence=0.92)]
+            ),
+            Line(
+              (words): [
+                Word(value='1%', confidence=1.0),
+                Word(value='Carbon', confidence=0.78),
+              ]
+            ),
+            Line(
+              (words): [Word(value='4%', confidence=1.0)]
+            ),
+            Line(
+              (words): [Word(value='Origen', confidence=0.99)]
+            ),
+            Line(
+              (words): [Word(value='Renovable', confidence=1.0)]
+            ),
+            Line(
+              (words): [
+                Word(value='Cogen.', confidence=0.94),
+                Word(value='Alta', confidence=0.83),
+                Word(value='Eficencia', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='CC', confidence=0.52),
+                Word(value='Gas', confidence=1.0),
+                Word(value='Natural', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [Word(value='Carbon', confidence=0.75)]
+            ),
+            Line(
+              (words): [Word(value='Fuel/Gas', confidence=0.99)]
+            ),
+            Line(
+              (words): [Word(value='Nuclear', confidence=0.91)]
+            ),
+            Line(
+              (words): [
+                Word(value='Otras', confidence=1.0),
+                Word(value='nor', confidence=0.85),
+                Word(value='renovables', confidence=1.0),
+              ]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [
+                Word(value='Laletra', confidence=0.99),
+                Word(value=''A', confidence=0.67),
+                Word(value='corresponde', confidence=0.99),
+                Word(value='alminimoi', confidence=0.81),
+                Word(value='impactoa', confidence=0.58),
+                Word(value='ambiental,', confidence=0.98),
+                Word(value='laD'a', confidence=0.57),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='lamediac', confidence=0.78),
+                Word(value='de', confidence=0.75),
+                Word(value='generacion', confidence=0.73),
+                Word(value='nacionalyla', confidence=0.37),
+                Word(value='G', confidence=0.86),
+                Word(value='almaximo', confidence=0.54),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='impacto', confidence=0.99),
+                Word(value='ambiental.', confidence=0.53),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Emisiones', confidence=0.99),
+                Word(value='de', confidence=0.98),
+                Word(value='cO,', confidence=0.57),
+                Word(value='equivalente', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [Word(value='EndesaEnergaSAU', confidence=0.48)]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [Word(value='Renovable', confidence=1.0)]
+            ),
+            Line(
+              (words): [Word(value='33%', confidence=1.0)]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [
+                Word(value='Residuos', confidence=1.0),
+                Word(value='Radioactivos', confidence=0.94),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='Endesal', confidence=0.82),
+                Word(value='EnergiaSAU', confidence=0.92),
+              ]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [
+              Word(value='Alta', confidence=1.0),
+              Word(value='Actividad', confidence=0.94),
+            ]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [
+                Word(value='Cogen.', confidence=0.89),
+                Word(value='Alta', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [Word(value='Eficencia', confidence=1.0)]
+            ),
+            Line(
+              (words): [Word(value='2%', confidence=1.0)]
+            ),
+            Line(
+              (words): [
+                Word(value='CCG', confidence=0.99),
+                Word(value='Gasl', confidence=0.64),
+                Word(value='Natural', confidence=1.0),
+              ]
+            ),
+            Line(
+              (words): [Word(value='30%', confidence=1.0)]
+            ),
+            Line(
+              (words): [
+                Word(value='Mixs', confidence=0.64),
+                Word(value='generaciôn', confidence=0.49),
+              ]
+            ),
+            Line(
+              (words): [Word(value='nacional', confidence=0.98)]
+            ),
+            Line(
+              (words): [Word(value='42,3%', confidence=1.0)]
+            ),
+            Line(
+              (words): [Word(value='2,1%', confidence=1.0)]
+            ),
+            Line(
+              (words): [
+                Word(value='25,7%', confidence=1.0),
+                Word(value='EmisionesCO,', confidence=0.89),
+                Word(value='eq', confidence=0.98),
+                Word(value='(g/kWhl', confidence=0.46),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='2,9%', confidence=1.0),
+                Word(value='Medancionslgkwn,', confidence=0.4),
+              ]
+            ),
+            Line(
+              (words): [Word(value='1,1%', confidence=1.0)]
+            ),
+            Line(
+              (words): [Word(value='5,2%', confidence=1.0)]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [
+                Word(value='Endesal', confidence=0.6),
+                Word(value='Energia', confidence=0.94),
+              ]
+            ),
+            Line(
+              (words): [Word(value='S.A.U', confidence=0.98)]
+            ),
+            Line(
+              (words): [Word(value='33,0%', confidence=1.0)]
+            ),
+            Line(
+              (words): [Word(value='1,5%', confidence=1.0)]
+            ),
+            Line(
+              (words): [Word(value='30,3%', confidence=1.0)]
+            ),
+            Line(
+              (words): [Word(value='3,4%', confidence=0.99)]
+            ),
+            Line(
+              (words): [Word(value='1,3%', confidence=1.0)]
+            ),
+            Line(
+              (words): [Word(value='24,4%', confidence=1.0)]
+            ),
+            Line(
+              (words): [Word(value='6,1%', confidence=1.0)]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [Word(value='E', confidence=1.0)]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [
+            Line(
+              (words): [
+                Word(value='188', confidence=1.0),
+                Word(value='Residuos', confidence=0.95),
+                Word(value='Radiactioslugkwn', confidence=0.37),
+              ]
+            ),
+            Line(
+              (words): [
+                Word(value='162', confidence=1.0),
+                Word(value='Medaneconaltupkwn)', confidence=0.36),
+              ]
+            ),
+          ]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [Word(value='533', confidence=1.0)]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [
+              Word(value='20,7%', confidence=1.0),
+              Word(value='Mési', confidence=0.89),
+              Word(value='informacion', confidence=0.68),
+              Word(value='sobre', confidence=1.0),
+              Word(value='el', confidence=1.0),
+              Word(value='origen', confidence=0.62),
+              Word(value='de', confidence=1.0),
+              Word(value='su', confidence=0.93),
+              Word(value='electricidad', confidence=0.99),
+            ]
+          )]
+          (artefacts): []
+        ),
+        Block(
+          (lines): [Line(
+            (words): [
+              Word(value='enh', confidence=1.0),
+              Word(value='htps/lgdo.cnmc.es/', confidence=0.36),
+            ]
+          )]
+          (artefacts): []
+        ),
+      ]
+    ),
+  ]
+)

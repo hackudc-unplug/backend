@@ -293,3 +293,9 @@ pip-selfcheck.json
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/python,pycharm+all,visualstudiocode,venv
+
+# Custom
+**/static/bill/**
+**/static/electrodata/**
+**/static/parser/**
+**/static/upload/**

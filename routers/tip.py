@@ -11,7 +11,7 @@ router = APIRouter(
 tip_service = TipImpService()
 
 
-@router.get(
+@router.post(
     "",
     status_code=status.HTTP_200_OK,
     response_model=GetTipResponse,

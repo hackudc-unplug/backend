@@ -1,6 +1,7 @@
 import datetime
-import requests
+
 import pandas as pd
+import requests
 
 from schemas.price_consumption import (
     GetPriceConsumptionMonthResponse,
@@ -10,6 +11,9 @@ from schemas.price_consumption import (
 from services.price_consumption.price_consumption_service import (
     PriceConsumptionService,
 )
+
+ORIGINAL_DATA_PATH = "static/electrodata/electrodata.csv"
+CSV_UPLOAD_DIR = 'static/data/'
 
 
 class PriceConsumptionImpService(PriceConsumptionService):
@@ -23,8 +27,9 @@ class PriceConsumptionImpService(PriceConsumptionService):
             "https://api.esios.ree.es/archives/70/download_json?date="
         )
 
-    def _load_data(self) -> pd.DataFrame:
-        df = pd.read_csv("static/electrodata/electrodatos.csv")
+    @staticmethod
+    def _load_data() -> pd.DataFrame:
+        df = pd.read_csv(ORIGINAL_DATA_PATH)
         df['datetime'] = pd.to_datetime(
             df['datetime'], format='%Y-%m-%d %H:%M:%S'
         )
@@ -105,3 +110,8 @@ class PriceConsumptionImpService(PriceConsumptionService):
     @staticmethod
     def _date_to_api_format(date: datetime) -> str:
         return date.strftime("%Y-%m-%d")
+
+    def add_data(self, csv_path: str):
+        new_df = pd.read_csv(f"{CSV_UPLOAD_DIR}{csv_path}")
+        self.df = pd.concat([self.df, new_df])
+        self.df.to_csv(ORIGINAL_DATA_PATH, index=False)

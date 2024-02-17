@@ -1,8 +1,9 @@
-from typing import List, Tuple
 import re
-import json
+from typing import List, Tuple
+
 from doctr.io import DocumentFile
 from doctr.models import ocr_predictor
+
 
 class ValueParser:
     @staticmethod
@@ -11,37 +12,62 @@ class ValueParser:
         value_end = line.find("'", value_start)
         return line[value_start:value_end]
 
+
 class EnergyConsumption:
-    def __init__(self, consumption_type: str, consumption: float, average_price: float):
+    def __init__(
+        self, consumption_type: str, cons: float, average_price: float
+    ):
         self.consumption_type = consumption_type
-        self.consumption = round(consumption, 3)
-        self.average_price = round(average_price, 6) 
+        self.consumption = round(cons, 3)
+        self.average_price = round(average_price, 6)
 
     def __str__(self):
         return f"{self.consumption_type}: Energy Consumption: {self.consumption} kWh, Average Price: {self.average_price} €/kWh"
+
 
 class EnergyConsumptionAnalyzer:
     def __init__(self, file_path: str):
         self.file_path = file_path
 
-    def parse_data_as_json(self):
+    def parse_data(self):
         lines = self.read_lines_from_file()
         merged_data = self.merge_strings(lines)
         consumptions = self.aggregate_data(merged_data)
-        min_consumption = (consumptions[0].consumption + consumptions[1].consumption + consumptions[2].consumption) * consumptions[2].average_price
-        max_consumption = (consumptions[0].consumption + consumptions[1].consumption + consumptions[2].consumption) * consumptions[0].average_price
-        punta_consumption = consumptions[0].consumption * consumptions[0].average_price
-        llano_consumption = consumptions[1].consumption * consumptions[1].average_price
-        valle_consumption = consumptions[2].consumption * consumptions[2].average_price
+        min_consumption = (
+            consumptions[0].consumption
+            + consumptions[1].consumption
+            + consumptions[2].consumption
+        ) * consumptions[2].average_price
+        max_consumption = (
+            consumptions[0].consumption
+            + consumptions[1].consumption
+            + consumptions[2].consumption
+        ) * consumptions[0].average_price
+        punta_consumption = (
+            consumptions[0].consumption * consumptions[0].average_price
+        )
+        llano_consumption = (
+            consumptions[1].consumption * consumptions[1].average_price
+        )
+        valle_consumption = (
+            consumptions[2].consumption * consumptions[2].average_price
+        )
         total = punta_consumption + llano_consumption + valle_consumption
-        return (round(total, 2), round(punta_consumption, 2), round(valle_consumption, 2), round(llano_consumption, 2), round(max_consumption, 2), round(min_consumption, 2))
-        
+        return (
+            round(total, 2),
+            round(punta_consumption, 2),
+            round(valle_consumption, 2),
+            round(llano_consumption, 2),
+            round(max_consumption, 2),
+            round(min_consumption, 2),
+        )
 
     def read_lines_from_file(self) -> List[str]:
         with open(self.file_path, "r") as file:
             return file.readlines()
 
-    def merge_strings(self, lines: List[str]) -> List[Tuple[str, float, float]]:
+    @staticmethod
+    def merge_strings(lines: List[str]) -> List[Tuple[str, float, float]]:
         merged_strings = []
         titles = []
         merged_string = ""
@@ -54,7 +80,7 @@ class EnergyConsumptionAnalyzer:
                 if "]" in line:
                     merged_strings.append(merged_string)
                     titles.append(title)
-                    merged_string = ""  
+                    merged_string = ""
                     found_title = False
                     continue
                 value_start = line.find("value='") + len("value='")
@@ -93,19 +119,32 @@ class EnergyConsumptionAnalyzer:
 
         return parsed_data
 
-    def aggregate_data(self, data: List[Tuple[str, float, float]]) -> List[EnergyConsumption]:
+    @staticmethod
+    def aggregate_data(
+        data: List[Tuple[str, float, float]]
+    ) -> List[EnergyConsumption]:
         energy_consumptions = []
         for title, sum_first, avg_second in data:
-            energy_consumptions.append(EnergyConsumption(title, sum_first, avg_second))
+            energy_consumptions.append(
+                EnergyConsumption(title, sum_first, avg_second)
+            )
         return energy_consumptions
-    
+
 
 class EnergySourceAnalyzer:
     def __init__(self, file_path: str):
         self.file_path = file_path
-        self.sources = ["renewable", "highEfficiency", "naturalGas", "coal", "fuel", "nuclear", "otherNonRenewable"]
+        self.sources = [
+            "renewable",
+            "highEfficiency",
+            "naturalGas",
+            "coal",
+            "fuel",
+            "nuclear",
+            "otherNonRenewable",
+        ]
 
-    def parse_data_as_json(self) -> str:
+    def parse_data(self) -> list[float]:
         lines = self.read_lines_from_file()
         source_line_index = self.find_source_line(lines)
         percentages = self.extract_percentages(lines[source_line_index:])
@@ -115,7 +154,8 @@ class EnergySourceAnalyzer:
         with open(self.file_path, "r") as file:
             return file.readlines()
 
-    def find_source_line(self, lines: List[str]) -> int:
+    @staticmethod
+    def find_source_line(lines: List[str]) -> int:
         appeared_once = False
         for i, line in enumerate(lines):
             if "S.A.U" in line:
@@ -123,7 +163,8 @@ class EnergySourceAnalyzer:
                     return i
                 appeared_once = True
 
-    def extract_percentages(self, lines: List[str]) -> List[float]:
+    @staticmethod
+    def extract_percentages(lines: List[str]) -> List[float]:
         percentages = []
         for line in lines:
             if line.strip() == "]":
@@ -139,20 +180,15 @@ class OCRAnalyzer:
     def __init__(self):
         self.model = ocr_predictor(pretrained=True)
 
-    def parse_data_as_json(self, input_file: str, output_file='out.txt') -> Tuple[str, str]:
+    def parse_data_as_json(
+        self, input_file: str, output_file='out.txt'
+    ) -> tuple[tuple[float, float, float, float, float, float], list[float]]:
         doc_pdf = DocumentFile.from_pdf(input_file)
         result_pdf = self.model(doc_pdf)
         with open(output_file, "w") as f:
             f.write(str(result_pdf))
 
-        consumptionAnalyzer = EnergyConsumptionAnalyzer(output_file)
-        sourceAnalyzer = EnergySourceAnalyzer(output_file)
+        consumption_analyzer = EnergyConsumptionAnalyzer(output_file)
+        source_analyzer = EnergySourceAnalyzer(output_file)
 
-        return (consumptionAnalyzer.parse_data_as_json(), sourceAnalyzer.parse_data_as_json())
-        
-
-if __name__ == "__main__":
-    ocr_analyzer = OCRAnalyzer()
-    consumption, sources = ocr_analyzer.parse_data_as_json("factura-sencera-pdf.pdf")
-    print(consumption)
-    print(sources)
+        return consumption_analyzer.parse_data(), source_analyzer.parse_data()

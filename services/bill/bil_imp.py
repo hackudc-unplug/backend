@@ -1,6 +1,6 @@
 import os
 
-from docparser import (
+from model.docparser import (
     EnergyConsumptionAnalyzer,
     EnergySourceAnalyzer,
     OCRAnalyzer,
@@ -22,20 +22,25 @@ class BillImpService(BillService):
         self._set_output_file(bill_id)
         if self._should_extract(bill_id):
             self._extract_text(bill_id)
-        consumptionAnalyzer = EnergyConsumptionAnalyzer(self.output_file)
-        total, punta, valle, llano, max, min = (
-            consumptionAnalyzer.parse_data_as_json()
+        consumption_analyzer = EnergyConsumptionAnalyzer(self.output_file)
+        total, punta, valle, llano, maximum, minimum = (
+            consumption_analyzer.parse_data()
         )
 
         return GetExpensesResponse(
-            total=total, punta=punta, valle=valle, llano=llano, max=max, min=min
+            total=total,
+            punta=punta,
+            valle=valle,
+            llano=llano,
+            max=maximum,
+            min=minimum,
         )
 
     def sources(self, bill_id: str) -> GetSourcesResponse:
         self._set_output_file(bill_id)
         if self._should_extract(bill_id):
             self._extract_text(bill_id)
-        sourceAnalyzer = EnergySourceAnalyzer(self.output_file)
+        source_analyzer = EnergySourceAnalyzer(self.output_file)
         (
             renewable,
             highEfficiency,
@@ -44,7 +49,7 @@ class BillImpService(BillService):
             fuel,
             nuclear,
             otherNonRenewable,
-        ) = sourceAnalyzer.parse_data_as_json()
+        ) = source_analyzer.parse_data()
 
         return GetSourcesResponse(
             renewable=renewable,

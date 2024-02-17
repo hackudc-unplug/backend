@@ -24,7 +24,7 @@ class EnergyConsumptionAnalyzer:
     def __init__(self, file_path: str):
         self.file_path = file_path
 
-    def parse_data_as_json(self) -> List[EnergyConsumption]:
+    def parse_data_as_json(self):
         lines = self.read_lines_from_file()
         merged_data = self.merge_strings(lines)
         consumptions = self.aggregate_data(merged_data)
@@ -34,17 +34,7 @@ class EnergyConsumptionAnalyzer:
         llano_consumption = consumptions[1].consumption * consumptions[1].average_price
         valle_consumption = consumptions[2].consumption * consumptions[2].average_price
         total = punta_consumption + llano_consumption + valle_consumption
-
-        data = {
-            "total": round(total, 2),
-            "punta": round(punta_consumption, 2),
-            "valle": round(valle_consumption, 2),
-            "llano": round(llano_consumption, 2),
-            "max": round(max_consumption, 2),
-            "min": round(min_consumption, 2)
-        }
-
-        return json.dumps(data, indent=2)
+        return (round(total, 2), round(punta_consumption, 2), round(valle_consumption, 2), round(llano_consumption, 2), round(max_consumption, 2), round(min_consumption, 2))
         
 
     def read_lines_from_file(self) -> List[str]:
@@ -119,8 +109,7 @@ class EnergySourceAnalyzer:
         lines = self.read_lines_from_file()
         source_line_index = self.find_source_line(lines)
         percentages = self.extract_percentages(lines[source_line_index:])
-        data = {source: percentage for source, percentage in zip(self.sources, percentages)}
-        return json.dumps(data, indent=2)
+        return percentages
 
     def read_lines_from_file(self) -> List[str]:
         with open(self.file_path, "r") as file:

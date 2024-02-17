@@ -61,7 +61,20 @@ class PriceConsumptionImpService(PriceConsumptionService):
     def month_price_consumption(
         self, bill_id: str, day: int, month: int, year: int
     ) -> GetPriceConsumptionMonthResponse:
-        pass
+        consumptions: list[float] = []
+        prices: list[float] = []
+
+        date = datetime.datetime(year, month, day)
+        date = date.replace(day=1)
+        month = date.month
+        while date.month == month:
+            consumptions += self.get_consumptions_for(date)
+            prices += self.get_prices_for(date)
+            date += datetime.timedelta(days=1)
+
+        return GetPriceConsumptionMonthResponse(
+            prices=prices, consumptions=consumptions
+        )
 
     def get_consumptions_for(self, date: datetime) -> list[float]:
         consumptions: list[float] = []

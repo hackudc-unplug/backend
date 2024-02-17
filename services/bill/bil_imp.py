@@ -1,4 +1,8 @@
-from docparser import EnergyConsumptionAnalyzer, EnergySourceAnalyzer, OCRAnalyzer
+from docparser import (
+    EnergyConsumptionAnalyzer,
+    EnergySourceAnalyzer,
+    OCRAnalyzer,
+)
 from schemas.bill import GetTipResponse, GetSourcesResponse, GetExpensesResponse
 from services.bill.bill import BillService, BILL_DIR
 import os
@@ -14,25 +18,32 @@ class BillImpService(BillService):
         self.ocr_model = OCRAnalyzer()
 
     def expenses(self, bill_id: str) -> GetExpensesResponse:
+        self._set_output_file(bill_id)
         if self._should_extract(bill_id):
             self._extract_text(bill_id)
         consumptionAnalyzer = EnergyConsumptionAnalyzer(self.output_file)
-        total, punta, valle, llano, max, min = consumptionAnalyzer.parse_data_as_json()
+        total, punta, valle, llano, max, min = (
+            consumptionAnalyzer.parse_data_as_json()
+        )
 
         return GetExpensesResponse(
-            total=total,
-            punta=punta,
-            valle=valle,
-            llano=llano,
-            max=max,
-            min=min
+            total=total, punta=punta, valle=valle, llano=llano, max=max, min=min
         )
 
     def sources(self, bill_id: str) -> GetSourcesResponse:
+        self._set_output_file(bill_id)
         if self._should_extract(bill_id):
             self._extract_text(bill_id)
         sourceAnalyzer = EnergySourceAnalyzer(self.output_file)
-        renewable, highEfficiency, naturalGas, coal, fuel, nuclear, otherNonRenewable = sourceAnalyzer.parse_data_as_json()
+        (
+            renewable,
+            highEfficiency,
+            naturalGas,
+            coal,
+            fuel,
+            nuclear,
+            otherNonRenewable,
+        ) = sourceAnalyzer.parse_data_as_json()
 
         return GetSourcesResponse(
             renewable=renewable,
@@ -41,8 +52,12 @@ class BillImpService(BillService):
             coal=coal,
             fuel=fuel,
             nuclear=nuclear,
-            otherNonRenewable=otherNonRenewable
+            otherNonRenewable=otherNonRenewable,
         )
+
+    def _set_output_file(self, bill_id: str):
+        no_extension = bill_id.split(".")[0]
+        self.output_file = f"{EXTRACT_DIR}/{no_extension}.txt"
 
     @staticmethod
     def _should_extract(bill_id: str) -> bool:

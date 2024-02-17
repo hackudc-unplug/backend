@@ -7,7 +7,21 @@ class DetailResponseBody(BaseModel):
 
 INVALID_REQUEST = {
     400: {
-        "description": "Error: Invalid file type",
+        "description": "Error: Invalid request",
+        "model": DetailResponseBody,
+    }
+}
+
+NOT_FOUND = {
+    404: {
+        "description": "Error: Bill not found",
+        "model": DetailResponseBody,
+    }
+}
+
+INVALID_MEDIA_TYPE = {
+    413: {
+        "description": "Error: Media type not supported",
         "model": DetailResponseBody,
     }
 }

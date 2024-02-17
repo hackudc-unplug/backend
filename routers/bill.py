@@ -40,7 +40,7 @@ def upload_bill(
     responses={**NOT_FOUND},
 )
 def get_expenses(
-    bill_id: int,
+    bill_id: str,
 ):
     return {"Get": "expenses"}
 
@@ -52,7 +52,7 @@ def get_expenses(
     responses={**NOT_FOUND},
 )
 def get_sources(
-    bill_id: int,
+    bill_id: str,
 ):
     return {"Get": "sources"}
 
@@ -64,7 +64,7 @@ def get_sources(
     responses={**NOT_FOUND, **INVALID_REQUEST},
 )
 def get_price_consumption_day(
-    bill_id: int,
+    bill_id: str,
     day: str,
 ):
     return {"Get": "price-consumption/day"}
@@ -77,7 +77,7 @@ def get_price_consumption_day(
     responses={**NOT_FOUND, **INVALID_REQUEST},
 )
 def get_price_consumption_day(
-    bill_id: int,
+    bill_id: str,
     week: str,
 ):
     return {"Get": "price-consumption/week"}
@@ -90,7 +90,7 @@ def get_price_consumption_day(
     responses={**NOT_FOUND, **INVALID_REQUEST},
 )
 def get_price_consumption_day(
-    bill_id: int,
+    bill_id: str,
     month: str,
 ):
     return {"Get": "price-consumption/month"}
@@ -103,6 +103,6 @@ def get_price_consumption_day(
     responses={**NOT_FOUND},
 )
 def get_tip(
-    bill_id: int,
+    bill_id: str,
 ):
     return {"Get": "tip"}

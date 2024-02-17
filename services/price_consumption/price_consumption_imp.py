@@ -15,13 +15,19 @@ class PriceConsumptionImpService(PriceConsumptionService):
     api_base_url: str
 
     def __init__(self):
-        self.df = pd.read_csv("static/electrodata/electrodatos.csv")
-        self.df['datetime'] = pd.to_datetime(
-            self.df['datetime'], format='%Y-%m-%d %H:%M:%S'
-        )
+        self.df = self._load_data()
+
         self.api_base_url = (
             "https://api.esios.ree.es/archives/70/download_json?date="
         )
+
+    def _load_data(self) -> pd.DataFrame:
+        df = pd.read_csv("static/electrodata/electrodatos.csv")
+        df['datetime'] = pd.to_datetime(
+            df['datetime'], format='%Y-%m-%d %H:%M:%S'
+        )
+        df.drop_duplicates(subset='datetime', inplace=True)
+        return df
 
     def day_price_consumption(
         self, bill_id: str, day: int, month: int, year: int
@@ -37,7 +43,20 @@ class PriceConsumptionImpService(PriceConsumptionService):
     def week_price_consumption(
         self, bill_id: str, day: int, month: int, year: int
     ) -> GetPriceConsumptionWeekResponse:
-        pass
+        consumptions: list[float] = []
+        prices: list[float] = []
+
+        date = datetime.datetime(year, month, day)
+        days_since_monday = date.weekday()
+        previous_monday = date - datetime.timedelta(days=days_since_monday)
+        for i in range(7):
+            date = previous_monday + datetime.timedelta(days=i)
+            consumptions += self.get_consumptions_for(date)
+            prices += self.get_prices_for(date)
+
+        return GetPriceConsumptionWeekResponse(
+            prices=prices, consumptions=consumptions
+        )
 
     def month_price_consumption(
         self, bill_id: str, day: int, month: int, year: int

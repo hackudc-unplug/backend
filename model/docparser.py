@@ -97,8 +97,10 @@ class EnergyConsumptionAnalyzer:
 
         merged_strings_filtered = []
         titles_filtered = []
+        print('Merged strings:', merged_strings)
+        print('Titles:', titles)
         for merged_str, title in zip(merged_strings[2:], titles[2:]):
-            if merged_str.lstrip()[0].isdigit():
+            if 'kWh' in merged_str:
                 merged_strings_filtered.append(merged_str)
                 titles_filtered.append(title)
 

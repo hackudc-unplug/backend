@@ -1,19 +1,16 @@
-from fastapi import APIRouter, UploadFile, File, HTTPException
+from fastapi import APIRouter, UploadFile, File
 
 from schemas.bill import (
     GetExpensesResponse,
     GetSourcesResponse,
-    GetPriceConsumptionDayResponse,
-    GetPriceConsumptionMonthResponse,
-    GetPriceConsumptionWeekResponse,
     GetTipResponse,
 )
+from services.bill.bil_imp import BillImpService
 from services.date import DateService
 from services.image_service import ImageService
 from fastapi import status
 
-from schemas.errors import INVALID_REQUEST, NOT_FOUND, INVALID_MEDIA_TYPE
-from services.mock_bill import MockBillService
+from schemas.errors import NOT_FOUND, INVALID_MEDIA_TYPE
 
 router = APIRouter(
     prefix="/bill",
@@ -21,8 +18,8 @@ router = APIRouter(
 )
 
 image_service = ImageService()
-bill_service = MockBillService()
-date_service = DateService()
+# bill_service = MockBillService()
+bill_service = BillImpService()
 
 
 @router.post(
@@ -78,63 +75,6 @@ def get_sources(
     # if not bill_service.bill_exists(bill_id):
     #     raise HTTPException(status_code=404, detail="Bill not found")
     return bill_service.sources(bill_id)
-
-
-@router.get(
-    "/{bill_id}/price-consumption/day",
-    status_code=status.HTTP_200_OK,
-    response_model=GetPriceConsumptionDayResponse,
-    responses={**NOT_FOUND, **INVALID_REQUEST},
-)
-def get_price_consumption_day(
-    bill_id: str,
-    day: int,
-    month: int,
-    year: int,
-):
-    # if not bill_service.bill_exists(bill_id):
-    #     raise HTTPException(status_code=404, detail="Bill not found")
-    # if not date_service.valid_date(day, month, year):
-    #     raise HTTPException(status_code=400, detail="Invalid date")
-    return bill_service.day_price_consumption(bill_id, day, month, year)
-
-
-@router.get(
-    "/{bill_id}/price-consumption/week",
-    status_code=status.HTTP_200_OK,
-    response_model=GetPriceConsumptionWeekResponse,
-    responses={**NOT_FOUND, **INVALID_REQUEST},
-)
-def get_price_consumption_day(
-    bill_id: str,
-    day: int,
-    month: int,
-    year: int,
-):
-    # if not bill_service.bill_exists(bill_id):
-    #     raise HTTPException(status_code=404, detail="Bill not found")
-    # if not date_service.valid_date(day, month, year):
-    #     raise HTTPException(status_code=400, detail="Invalid date")
-    return bill_service.week_price_consumption(bill_id, day, month, year)
-
-
-@router.get(
-    "/{bill_id}/price-consumption/month",
-    status_code=status.HTTP_200_OK,
-    response_model=GetPriceConsumptionMonthResponse,
-    responses={**NOT_FOUND, **INVALID_REQUEST},
-)
-def get_price_consumption_day(
-    bill_id: str,
-    day: int,
-    month: int,
-    year: int,
-):
-    # if not bill_service.bill_exists(bill_id):
-    #     raise HTTPException(status_code=404, detail="Bill not found")
-    # if not date_service.valid_date(day, month, year):
-    #     raise HTTPException(status_code=400, detail="Invalid date")
-    return bill_service.month_price_consumption(bill_id, day, month, year)
 
 
 @router.get(

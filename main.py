@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import RedirectResponse
-from routers import bill, price_consumption
+from routers import bill, price_consumption, tip
 
 app = FastAPI(
     title="HackUDC 2024 - Backend",
@@ -13,6 +13,7 @@ app = FastAPI(
 )
 app.include_router(bill.router)
 app.include_router(price_consumption.router)
+app.include_router(tip.router)
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
